@@ -14,14 +14,19 @@ O protótipo OmniCare é um robô móvel omnidirecional, autônomo e modular, pr
 
 ## Introdução
 
-- Apresente uma contextualização para o problema que o seu robô irá resolver e por quê esse tipo de robô é necessário hoje na sociedade.
-- Apresente uma breve descrição do seu robô e sua aplicação (tarefa que ele irá resolver).
-- Em uma única frase, resuma o objetivo do seu robô.
-- Que tipo de experiência o robô deve proporcionar para os usuários?
+Nos últimos anos, a robótica tem desempenhado um papel fundamental no desenvolvimento de soluções tecnológicas voltadas para a saúde, com o objetivo de melhorar a eficiência hospitalar e reduzir riscos para os profissionais. Aplicações como a cirurgia assistida por robôs, a reabilitação e terapia robóticas e o uso de robôs em ambientes hospitalares, como no transporte de equipamentos, têm sido amplamente adotadas. Essas tecnologias têm permitido intervenções mais precisas, maior agilidade no atendimento e uma significativa redução no tempo de recuperação dos pacientes. 
+E no cenário pós-pandêmico, a automação hospitalar tem ganhado destaque como uma ferramenta de apoio à rotina clínica e operacional. Contudo, um desafio técnico recorrente é a limitação dos robôs móveis em realizarem tarefas logísticas entre diferentes andares, já que a maioria das soluções atuais depende da integração com o sistema interno dos elevadores, algo muitas vezes inviável.
+
+Omnicare é um robô móvel omnidirecional, autônomo e modular, com capacidade de interagir fisicamente com elevadores comuns por meio de um manipulador que aciona os botões necessários para a navegação entre andares.
+
+Navegar em diferentes andares de um hospital para auxilar a equipe do local.
+
+O robô deve proporcinar uma experiência segura e confiavél.
 
 ## Publico Alvo
 
-- Determine o seu público alvo:
+Equipe que trabalha no hospital.
+  
 
 ### Personas
 
