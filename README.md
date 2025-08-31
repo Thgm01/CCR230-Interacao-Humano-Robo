@@ -3,7 +3,7 @@
 Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interação Humano-Robô (IHR) (CCR230) do curso de Engenharia de Robôs, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
 
 ## Componentes do Grupo
-
+- Julia Biazi Pisok - 11. - Eng. de Robôs
 - Leonardo Santos de Andrade Quirino - 11.121.422-7 - Eng. de Robôs
 - Lucas Ricardo Moraes Lagoeiro - 11.120.316-2 - Eng. de Robôs
 - Thiago Travagini Moura - 11.121.329-4 - Eng. de Controle e Automação
@@ -118,6 +118,30 @@ Equipe que trabalha no hospital.
 
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
 
-<!-- TODOs:
-- Add exemplos
- -->
+
+# Aula 4
+## Tarefa 1
+
+- Qual é a situação de uso para a IHR do seu robô?
+  Transporte de itens e assitente de informação 
+  - Contexto:
+    O contexto principal analisado foi em um ambiente hospitalar.
+  
+  - Usuário(s):
+    Os principais usuários são os funcionarios do hospital (Setor logistico, medicos, enfermeiros e etc.), os pacientes e também prestadores de serviços no hospital. Levando em conta principlamente as pessoas com qualquer tipo de dificuldade fisica, mental ou psicologica.
+  
+  - Objetivos:
+    Auxiliar no transporte de cargas dentro do hospital de forma segura para os pacientes, prestadores de serviços e funcionários e também fornecer informações sobre o hospital.
+  
+  - Interação:
+    Comunicação entre os funcionários para definir o que deve ser feito, interação social com todas as pessoas que frequentam o ambiente hospitalar e comunicação com os pacientes e prestadores de serviço do hospital para fornecer informações.
+
+  - Interface e Sistema:
+    Fiquei com duvida nesse topico
+
+- Como inserir o seu robô em um contexto cotidiano para aprimorar a solução de um problema?
+  É possível inserir o nosso robô dentro dos hospitais para servir de transportadores de cargas, realizando interações verbais e não verbais com todas as pessoas desse ambiente, podendo fornecer informações e repcionar os pacientes
+
+- Onde seus usuários interagem com seu Robô?
+  Robô utilizado para transporte de materiais que precisam de um maior cuidado (material infeccioso, alimentos, documentos ou remédios). Nesse caso o robô terá um uso mais interno do hospital onde suas principais interações serão com funcionários e prestadores de serviços com uma movimentação menor de pacientes. Esse uso fica com maior enfase em interagir com os responsaveis pela carga a ser transportada e com os destinatários dessas cargas (Farmácia, centros de exames, centros de coleta, lixeira e etc.). Também tem a interação com os pacientes onde o robo pode se comunicar com eles e fornecer informações e solicitar algumas tarefas como chamar o medico, guiar pelo hospital e etc.
+
