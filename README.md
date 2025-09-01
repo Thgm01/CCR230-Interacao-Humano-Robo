@@ -3,7 +3,7 @@
 Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário [FEI](https://portal.fei.edu.br/), como parte dos requisitos necessários para aprovação na disciplina de Interação Humano-Robô (IHR) (CCR230) do curso de Engenharia de Robôs, orientado pelo Prof. Dr. [Fagner de Assis Moura Pimentel](https://github.com/fagnerpimentel).
 
 ## Componentes do Grupo
-- Julia Biazi Pisok - 11. - Eng. de Robôs
+- Julia Biazi Pisok - 11.124.224-4 - Eng. de Controle e Automação
 - Leonardo Santos de Andrade Quirino - 11.121.422-7 - Eng. de Robôs
 - Lucas Ricardo Moraes Lagoeiro - 11.120.316-2 - Eng. de Robôs
 - Thiago Travagini Moura - 11.121.329-4 - Eng. de Controle e Automação
