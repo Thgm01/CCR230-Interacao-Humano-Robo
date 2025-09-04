@@ -33,7 +33,7 @@ Equipe que trabalha no hospital.
 - Descreva as personas que irão interagir com o robô. Deixe claro suas principais caracteristicas e contextos sociais, econômicos e culturais.
 - Quais informações sobre o usuário o robô deve saber antes de iniciar a tarefa?
 
-1ª Persona: Dra. Mariana Alves – Coordenadora de Enfermagem
+**1ª Persona: Dra. Mariana Alves – Coordenadora de Enfermagem**
 
 Identidade
   - Nome: Mariana Alves;
@@ -79,7 +79,9 @@ Relacionamentos
 
 <img width="1052" height="728" alt="image" src="https://github.com/user-attachments/assets/f6f80076-ac20-46f0-958c-7f4effb212d5" />
 
-2ª Persona: Dra. Mariana Alves – Coordenadora de Enfermagem
+
+
+**2ª Persona: Carlos Mendes – Gerente Administrativo Hospitalar**
 
 Identidade
   - Nome: Carlos Mendes;
@@ -90,7 +92,7 @@ Identidade
   - Personalidade: Analítico, orientado a resultados, focado em custo-benefício e eficiência operacional;
 
 Status
-  - Persona Secundária  
+  - Persona Primária.  
 
 Objetivos
   - Reduzir custos operacionais ligados à logística interna;
@@ -124,6 +126,32 @@ Relacionamentos
 <img width="1048" height="730" alt="image" src="https://github.com/user-attachments/assets/61f24f18-db7c-4be7-ba84-f010701a20fb" />
 
 
+**3ª Persona: Enzo Ferreira – Estagiário de Enfermagem**
+
+Identidade
+  - Nome: Enzo Ferreira;
+  - Idade: 45 anos;
+  - Estado civil: Solteiro;
+  - Formação: Graduando em Enfermagem;
+  - Local de trabalho: Hospital universitário de médio porte;
+  - Personalidade: Curioso, esforçado, adaptável, mas ainda inseguro em algumas situações práticas;
+
+Status
+  - Persona Secundária  
+
+Objetivos
+  - 
+
+Habilidades
+  - 
+  
+Tarefas
+  - 
+
+Relacionamentos
+  - 
+
+Mapa de empatia
 
 
 ## Contexto de uso
