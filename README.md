@@ -33,7 +33,7 @@ Equipe que trabalha no hospital.
 - Descreva as personas que irão interagir com o robô. Deixe claro suas principais caracteristicas e contextos sociais, econômicos e culturais.
 - Quais informações sobre o usuário o robô deve saber antes de iniciar a tarefa?
 
-  Persona: Dra. Mariana Alves – Coordenadora de Enfermagem
+1ª Persona: Dra. Mariana Alves – Coordenadora de Enfermagem
 
 Identidade
   - Nome: Mariana Alves;
@@ -75,9 +75,55 @@ Relacionamentos
   - Atua como decisora de rotina operacional, mas não necessariamente na compra de tecnologias (pode influenciar gestores).
 
 
-### Mapa de empatia
+1° Mapa de empatia
 
 <img width="1052" height="728" alt="image" src="https://github.com/user-attachments/assets/f6f80076-ac20-46f0-958c-7f4effb212d5" />
+
+2ª Persona: Dra. Mariana Alves – Coordenadora de Enfermagem
+
+Identidade
+  - Nome: Carlos Mendes;
+  - Idade: 45 anos;
+  - Estado civil: Solteiro, dois filhos;
+  - Formação: Administração com MBA em Gestão Hospitalar;
+  - Local de trabalho: Hospital privado de grande porte;
+  - Personalidade: Analítico, orientado a resultados, focado em custo-benefício e eficiência operacional;
+
+Status
+  - Persona Secundária  
+
+Objetivos
+  - Reduzir custos operacionais ligados à logística interna;
+  - Garantir eficiência no transporte de insumos, sem precisar contratar mais pessoal;
+  - Minimizar riscos trabalhistas relacionados ao esforço físico de transporte manual;
+  - Tornar o hospital referência em inovação tecnológica e automação hospitalar.
+
+Habilidades
+  - Graduação em enfermagem com mestrado em órteses;
+  - Gestão financeira e análise de retorno sobre investimento (ROI);
+  - Planejamento estratégico de processos hospitalares;
+  - Capacidade de negociação com fornecedores e parceiros tecnológicos;
+  - Visão sistêmica para equilibrar inovação, custo e aplicabilidade real.
+  
+Tarefas
+  - Avaliar propostas de novas tecnologias para o hospital;
+  - Monitorar indicadores de eficiência operacional (tempo de entrega de materiais, custos de pessoal);
+  - Coordenar melhorias de infraestrutura hospitalar;
+  - Aprovar investimentos em automação e soluções inovadoras.
+
+Relacionamentos
+  - Diretoria hospitalar: reporta resultados financeiros e propõe inovações;
+  - Equipe de enfermagem e médica: depende de feedback deles sobre eficiência logística;
+  - Equipe de TI e manutenção: garante integração, suporte e funcionamento das novas soluções.;
+  - Fornecedores de tecnologia: negocia aquisição, contratos de manutenção e suporte.;
+  - •	Pacientes (indiretamente): busca melhorar a experiência por meio de processos mais ágeis e eficientes.
+
+
+2° Mapa de empatia
+
+<img width="1048" height="730" alt="image" src="https://github.com/user-attachments/assets/61f24f18-db7c-4be7-ba84-f010701a20fb" />
+
+
 
 
 ## Contexto de uso
