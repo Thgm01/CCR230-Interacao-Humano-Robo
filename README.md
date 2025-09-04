@@ -34,44 +34,45 @@ Equipe que trabalha no hospital.
 - Quais informações sobre o usuário o robô deve saber antes de iniciar a tarefa?
 
   Persona: Dra. Mariana Alves – Coordenadora de Enfermagem
+
 Identidade
-  •	Nome: Mariana Alves;
-  •	Idade: 38 anos;
-  •	Estado civil: Casada, três filhos;
-  •	Formação: Enfermagem com especialização em Gestão Hospitalar;
-  •	Local de trabalho: Hospital geral de médio porte;
-  •	Personalidade: Prática, responsável, comprometida com a segurança e o bem-estar da equipe e dos pacientes;
+  - Nome: Mariana Alves;
+  - Idade: 38 anos;
+  - Estado civil: Casada, três filhos;
+  - Formação: Enfermagem com especialização em Gestão Hospitalar;
+  - Local de trabalho: Hospital geral de médio porte;
+  - Personalidade: Prática, responsável, comprometida com a segurança e o bem-estar da equipe e dos pacientes;
 
 Status
-  •	Persona Primária
+  - Persona Primária
 
 Objetivos
-  •	Garantir eficiência no transporte de materiais entre setores e andares;
-  •	Reduzir a sobrecarga da equipe de enfermagem em tarefas logísticas;
-  •	Melhorar a agilidade e segurança nos processos internos do hospital;
-  •	Aumentar o tempo disponível da equipe para atendimento direto aos pacientes.
+  - Garantir eficiência no transporte de materiais entre setores e andares;
+  - Reduzir a sobrecarga da equipe de enfermagem em tarefas logísticas;
+  - Melhorar a agilidade e segurança nos processos internos do hospital;
+  - Aumentar o tempo disponível da equipe para atendimento direto aos pacientes.
 
 Habilidades
-  •	Graduação em enfermagem com mestrado em órteses;
-  •	Experiência em gestão de equipes multidisciplinares;
-  •	Conhecimento em protocolos de biossegurança hospitalar;
-  •	Capacidade de organizar fluxos de trabalho em ambientes de alta demanda;
-  •	Boa adaptação a novas tecnologias, desde que tragam benefícios claros à equipe.
+  - Graduação em enfermagem com mestrado em órteses;
+  - Experiência em gestão de equipes multidisciplinares;
+  - Conhecimento em protocolos de biossegurança hospitalar;
+  - Capacidade de organizar fluxos de trabalho em ambientes de alta demanda;
+  - Boa adaptação a novas tecnologias, desde que tragam benefícios claros à equipe.
   
 Tarefas
-  •	Supervisionar e organizar turnos e funções da equipe de enfermagem;
-  •	Garantir que materiais e equipamentos cheguem no tempo certo aos setores;
-  •	Solucionar problemas logísticos do dia a dia (falta de insumos, atrasos em entregas internas);
-  •	Avaliar se novas soluções tecnológicas são viáveis na rotina da equipe.
+  - Supervisionar e organizar turnos e funções da equipe de enfermagem;
+  - Garantir que materiais e equipamentos cheguem no tempo certo aos setores;
+  - Solucionar problemas logísticos do dia a dia (falta de insumos, atrasos em entregas internas);
+  - Avaliar se novas soluções tecnológicas são viáveis na rotina da equipe.
 
 Relacionamentos
-  •	Equipe de enfermagem: principal elo, responsável por executar muitas das tarefas operacionais;
-  •	Gestores hospitalares: reporta indicadores e sugere melhorias, influencia em decisões de adoção de tecnologias;
-  •	Equipe de apoio logístico: trabalha em conjunto para transporte de insumos;
-  •	Médicos: depende da rapidez logística para atender às demandas clínicas;
-  •	Pacientes: impacto indireto — melhor logística significa mais tempo e qualidade no atendimento;
-  •	Principal responsável por coordenar a equipe de enfermagem e garantir o bom fluxo de materiais e equipamentos dentro do hospital;
-  •	Atua como decisora de rotina operacional, mas não necessariamente na compra de tecnologias (pode influenciar gestores).
+  - Equipe de enfermagem: principal elo, responsável por executar muitas das tarefas operacionais;
+  - Gestores hospitalares: reporta indicadores e sugere melhorias, influencia em decisões de adoção de tecnologias;
+  - Equipe de apoio logístico: trabalha em conjunto para transporte de insumos;
+  - Médicos: depende da rapidez logística para atender às demandas clínicas;
+  - Pacientes: impacto indireto — melhor logística significa mais tempo e qualidade no atendimento;
+  - Principal responsável por coordenar a equipe de enfermagem e garantir o bom fluxo de materiais e equipamentos dentro do hospital;
+  - Atua como decisora de rotina operacional, mas não necessariamente na compra de tecnologias (pode influenciar gestores).
 
 
 ### Mapa de empatia
