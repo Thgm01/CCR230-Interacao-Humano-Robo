@@ -117,8 +117,8 @@ Relacionamentos
   - Diretoria hospitalar: reporta resultados financeiros e propõe inovações;
   - Equipe de enfermagem e médica: depende de feedback deles sobre eficiência logística;
   - Equipe de TI e manutenção: garante integração, suporte e funcionamento das novas soluções.;
-  - Fornecedores de tecnologia: negocia aquisição, contratos de manutenção e suporte.;
-  - •	Pacientes (indiretamente): busca melhorar a experiência por meio de processos mais ágeis e eficientes.
+  - Fornecedores de tecnologia: negocia aquisição, contratos de manutenção e suporte;
+  - Pacientes (indiretamente): busca melhorar a experiência por meio de processos mais ágeis e eficientes.
 
 
 2° Mapa de empatia
@@ -130,7 +130,7 @@ Relacionamentos
 
 Identidade
   - Nome: Enzo Ferreira;
-  - Idade: 45 anos;
+  - Idade: 26 anos;
   - Estado civil: Solteiro;
   - Formação: Graduando em Enfermagem;
   - Local de trabalho: Hospital universitário de médio porte;
@@ -140,18 +140,33 @@ Status
   - Persona Secundária  
 
 Objetivos
-  - 
+  - Aprender na prática e ganhar experiência no ambiente hospitalar;
+  - Ajudar a equipe sem comprometer o cuidado com os pacientes;
+  - Ser reconhecido como alguém dedicado e colaborativo;
+  - Reduzir erros e evitar situações que exponham sua falta de experiência;
+  - Mostrar interesse por novas tecnologias para se destacar.
 
 Habilidades
-  - 
+  - Boa disposição física para deslocamentos e atividades práticas;
+  - Rápida adaptação a mudanças e novos processos;
+  - Familiaridade com tecnologias digitais (apps, sistemas, automação);
+  - Capacidade de aprender observando e executando sob supervisão.
   
 Tarefas
-  - 
+  - Apoiar a equipe de enfermagem em tarefas logísticas e administrativas;
+  - Acompanhar transporte de medicamentos, materiais e exames;
+  - Auxiliar em rotinas básicas de cuidado direto com pacientes;
+  - Aprender protocolos de biossegurança e fluxo hospitalar;
+  - Observar o funcionamento de tecnologias e sistemas do hospital.
 
 Relacionamentos
-  - 
+  - Enfermeiros supervisores: principais responsáveis por sua formação prática;
+  - Médicos residentes: contato frequente durante rotinas de enfermagem;
+  - Pacientes: vínculo indireto, ajudando em tarefas simples;
+  - Colegas estagiários: troca de experiências e aprendizado conjunto.
 
 Mapa de empatia
+<img width="1048" height="731" alt="image" src="https://github.com/user-attachments/assets/16b535d2-b4a9-41a6-8732-b83af0c0cd7f" />
 
 
 ## Contexto de uso
