@@ -170,12 +170,15 @@ Mapa de empatia
 
 
 ## Contexto de uso
+O OmniCare foi projetado para interagir em ambientes hospitalares, como hospitais, clínicas e centros de saúde, onde há grande fluxo de pessoas e rotinas sensíveis ao tempo. Nesse espaço, o robô precisa lidar com corredores movimentados, elevadores, diferentes andares e áreas de acesso restrito, sempre respeitando as regras de higiene, segurança e silêncio que caracterizam o ambiente hospitalar. A sua presença deve ser discreta e eficiente, auxiliando a equipe de saúde em tarefas logísticas como entrega de medicamentos e materiais, sem atrapalhar o trabalho humano.
 
-- Descreva o ambiente em que o robô interage com os usuários
-- Qual/quais o(s) contexto(s) sociais, econômicos e culturais existentes neste ambiente?
-- Quais informações sobre o ambiente o robô deve saber antes de iniciar a tarefa?
+No aspecto social, o robô se insere em um ambiente onde há pacientes em situações de vulnerabilidade, profissionais que trabalham sob pressão e familiares que muitas vezes estão preocupados. Por isso, a interação deve transmitir confiabilidade, empatia e neutralidade, de modo que seja visto como um aliado e não como um intruso. Já no aspecto econômico, a implementação do OmniCare está ligada à busca dos hospitais por otimização de recursos, redução de custos e aumento da eficiência. A automação de tarefas repetitivas libera tempo dos profissionais de saúde para atividades que exigem atenção humana, contribuindo para um melhor uso da equipe disponível. Culturalmente, o ambiente hospitalar exige respeito à privacidade, dignidade e protocolos estabelecidos, além de adaptação às diferentes formas de comunicação, considerando a diversidade linguística e cultural dos pacientes e colaboradores.
+
+Para atuar de forma eficaz, o OmniCare deve conhecer previamente informações sobre o hospital em que está inserido. É essencial que tenha acesso ao mapeamento do espaço, incluindo plantas dos andares, localização de corredores, salas e elevadores, além de distinguir áreas públicas das restritas. Também deve compreender a infraestrutura de mobilidade, como dimensões de portas e regras de circulação, e estar atento às condições dinâmicas do ambiente, como a movimentação constante de pessoas, macas e cadeiras de rodas. Além disso, precisa ter informações operacionais, como horários de entrega de medicamentos, prioridades de cada tarefa e protocolos de segurança no transporte de itens sensíveis. Por fim, é fundamental que reconheça quem são os usuários autorizados a interagir com ele, quais idiomas deve utilizar e quais são os diferentes níveis de acesso, garantindo que sua atuação seja eficiente, segura e adequada ao contexto hospitalar.
 
 ## Jornada do usuário
+
+
 
 - Criar uma narrativa para o o seu robô e o usuário.
 - Determine o passo a passo que o usuário realiza desde o primeiro até o último encontro com robô na realização da tarefa.
@@ -186,12 +189,33 @@ Mapa de empatia
 
 ## Análise de concorrência
 
-- Pesquise robôs existentes atualmente que possam fazer a tarefa deste projeto.
-- Selecione pelo menos 3 robôs diferentes que podem fazer essa tarefa.
-- Em relação aos concorrentes, respondam as seguintes perguntas?
-  - Existe plataforma similar que atende o mesmo mercado e funcionalidades? Se sim: Quais os pontos positivos? Quais os pontos negativos?
-  - Existe plataforma diferente quanto ao serviço, mas que atenda esse mercado? Se sim: Quais os pontos positivos? Quais os pontos negativos?
-  - Quais plataformas sua equipe acha mais interessantes? Qual a justificativa?
+**TUG / T3 - Aethon**
+TUG / T3 é uma linha consolidada de AMRs hospitalares que auxiliam em transporte de medicamentos, roupas, refeições, amostras etc. Ele é capaz de trabalhar com elevadores por meio de um sistema de integração por meio de interface com as controladoras do prédio
+
+- Forças: implantado em muitos hospitais, modelos voltados para cargas grandes, suporte comercial, técnico e de experiência de integração com TI hospitalar.
+- Fraquezas: depende de integração com a infraestrutura do hospital, e tambám há relatos públicos sobre a vulnerabilidades de segurança dos sistemas de robôs AMRs
+
+Quando comparado ao Omnicare, é notavél a sua superioridade no quesito de maior suporte para carregamento de cargas, porém ele perde ao precisar ser integrado ao sistema do hospital para se locomover entre andares.
+
+**Athena 2.0 — Slamtec**
+
+A Athena 2.0 é plataforma robótica móvel de uso geral, comunmente usada em logística, hotéis, hospitais e fábricas. Além de ser capaz de suportar transporte de cargas de até 60 kg, esse robô conta com o Smart Elevator Control 4.0, um sistema que se integra digitalmente aos elevadores, permitindo chamadas, monitoramento e deslocamento entre andares.
+
+- Forças: boa capacidade de carga para porte médio, navegação SLAM avançada com LiDAR, detecção de obstáculos, mapeamento de múltiplos andares, autonomia de até 19 horas, e disponibilidade comercial.
+- Fraquezas: depende de integração eletrônica com elevadores, risco de falhas de compatibilidade ou de comunicação entre sistemas.
+
+Omnicare apresente uma superioridade à Athena 2.0 por não precisar de um sistema integrado para utilizar elevadores, porém ele perde quando olhamos para a autonomia de 19 horas da Athena 2.0.
+
+
+**Moxi — Diligent Robotics**
+
+Moxi é robô assistente social desenvolvido para hospitais com foco em aliviar a carga de trabalho de enfermagem e corpo clínico. Faz isso por meio de entregas internas de suprimentos, medicamentos, kits e materiais leves. Apesar de um design mais "humano", ele não pode utilizar elevadores por meio de contato físico, no lugar conta com um sistema de integração.
+
+- Forças: design humanizado e social, experiência comprovada em ambientes hospitalares, foco em tarefas que liberam tempo da equipe de enfermagem.
+- Fraquezas: capacidade de carga limitada,ddependência de integração com elevadores, menor versatilidade em relação a tarefas industriais ou de transporte pesado.
+
+O Moxi tem uma grande vantagem em relação ao Omnicare no quesito de aceitação social e o foco na experiência de usuários humanos, enquanto o OmniCare aposta em versatilidade técnica. Isso dá ao OmniCare vantagem em hospitais com infraestrutura mais antiga e a vantagem de suportar mais carga.
+
 
 ## Design
 
