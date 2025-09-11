@@ -190,6 +190,10 @@ Para atuar de forma eficaz, o OmniCare deve conhecer previamente informações s
 ## Análise de concorrência
 
 **TUG / T3 - Aethon**
+
+<img width="3840" height="2159" alt="image" src="https://github.com/user-attachments/assets/169a24b5-e013-40b5-af6e-26391e4cd82c" />
+
+
 TUG / T3 é uma linha consolidada de AMRs hospitalares que auxiliam em transporte de medicamentos, roupas, refeições, amostras etc. Ele é capaz de trabalhar com elevadores por meio de um sistema de integração por meio de interface com as controladoras do prédio
 
 - Forças: implantado em muitos hospitais, modelos voltados para cargas grandes, suporte comercial, técnico e de experiência de integração com TI hospitalar.
@@ -198,6 +202,9 @@ TUG / T3 é uma linha consolidada de AMRs hospitalares que auxiliam em transport
 Quando comparado ao Omnicare, é notavél a sua superioridade no quesito de maior suporte para carregamento de cargas, porém ele perde ao precisar ser integrado ao sistema do hospital para se locomover entre andares.
 
 **Athena 2.0 — Slamtec**
+
+<img width="640" height="765" alt="image" src="https://github.com/user-attachments/assets/dfa74134-b66f-43d1-a010-b27b47aa3973" />
+
 
 A Athena 2.0 é plataforma robótica móvel de uso geral, comunmente usada em logística, hotéis, hospitais e fábricas. Além de ser capaz de suportar transporte de cargas de até 60 kg, esse robô conta com o Smart Elevator Control 4.0, um sistema que se integra digitalmente aos elevadores, permitindo chamadas, monitoramento e deslocamento entre andares.
 
@@ -208,6 +215,9 @@ Omnicare apresente uma superioridade à Athena 2.0 por não precisar de um siste
 
 
 **Moxi — Diligent Robotics**
+
+<img width="768" height="854" alt="image" src="https://github.com/user-attachments/assets/f6b97897-e661-49e6-8d68-093685c068fe" />
+
 
 Moxi é robô assistente social desenvolvido para hospitais com foco em aliviar a carga de trabalho de enfermagem e corpo clínico. Faz isso por meio de entregas internas de suprimentos, medicamentos, kits e materiais leves. Apesar de um design mais "humano", ele não pode utilizar elevadores por meio de contato físico, no lugar conta com um sistema de integração.
 
