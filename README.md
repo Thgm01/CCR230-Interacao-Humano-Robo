@@ -236,8 +236,11 @@ O Moxi tem uma grande vantagem em relação ao Omnicare no quesito de aceitaçã
 
 <!-- ![Partes do robô](partes_do_robo.png) -->
 <!-- ![Robô](robo.png) -->
-<img alt="Partes do robô" src="partes_do_robo.png" height="200"/>
-<img alt="Robô" src="robo.png" height="200"/>
+URDF do Omnicare:
+<img width="440" height="701" alt="image" src="https://github.com/user-attachments/assets/207e3279-b311-450c-affa-77d40f177ee5" />
+
+URDF do Manipulador do Omnicare:
+
 
 ## Ações do robô
 
