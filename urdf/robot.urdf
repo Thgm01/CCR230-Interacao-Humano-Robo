@@ -1,0 +1,1565 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/247f053335409b137ca0a3fa/w/ba9bac7773eb7e8311a3657d/e/53a5758d6eaac2842871f233 -->
+<robot name="my-robot">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="-2.45779e-17 -0.00736431 0.141268" rpy="0 0 0"/>
+      <mass value="9.03432"/>
+      <inertia ixx="0.588684" ixy="-1.30104e-17" ixz="3.46945e-18" iyy="0.584311" iyz="0.0754151" izz="0.304924"/>
+    </inertial>
+    <!-- Part imu -->
+    <visual>
+      <origin xyz="-2.36447e-17 -5.80614e-17 0.083" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/imu.stl"/>
+      </geometry>
+      <material name="imu_material">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.36447e-17 -5.80614e-17 0.083" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/imu.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part lidar -->
+    <visual>
+      <origin xyz="-2.24826e-17 -6.22208e-17 0.092" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/lidar.stl"/>
+      </geometry>
+      <material name="lidar_material">
+        <color rgba="0.6 0.6 0.6 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.24826e-17 -6.22208e-17 0.092" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/lidar.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor -->
+    <visual>
+      <origin xyz="0 0.155075 -0.04535" rpy="0 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/motor.stl"/>
+      </geometry>
+      <material name="motor_material">
+        <color rgba="0.756863 0.67451 0.580392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.155075 -0.04535" rpy="0 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mdf_motores -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf_motores.stl"/>
+      </geometry>
+      <material name="mdf_motores_material">
+        <color rgba="0.901961 0.835294 0.67451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf_motores.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mdf_tampa -->
+    <visual>
+      <origin xyz="6.93889e-18 -4.16334e-17 0.794" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf_tampa.stl"/>
+      </geometry>
+      <material name="mdf_tampa_material">
+        <color rgba="0.901961 0.835294 0.67451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 -4.16334e-17 0.794" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf_tampa.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part capa_baixo -->
+    <visual>
+      <origin xyz="6.93889e-18 -4.16334e-17 -0.078" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/capa_baixo.stl"/>
+      </geometry>
+      <material name="capa_baixo_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 -4.16334e-17 -0.078" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/capa_baixo.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mdf -->
+    <visual>
+      <origin xyz="1.54074e-33 -1.38778e-17 0.086" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf.stl"/>
+      </geometry>
+      <material name="mdf_material">
+        <color rgba="0.901961 0.835294 0.67451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.54074e-33 -1.38778e-17 0.086" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mdf_2 -->
+    <visual>
+      <origin xyz="1.54074e-33 -1.38778e-17 0.132" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf.stl"/>
+      </geometry>
+      <material name="mdf_2_material">
+        <color rgba="0.901961 0.835294 0.67451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.54074e-33 -1.38778e-17 0.132" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part led -->
+    <visual>
+      <origin xyz="6.93889e-18 -4.16334e-17 0.142" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/led.stl"/>
+      </geometry>
+      <material name="led_material">
+        <color rgba="1 1 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 -4.16334e-17 0.142" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/led.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part perfil_motores -->
+    <visual>
+      <origin xyz="0 0.207375 -0.01" rpy="0 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_motores.stl"/>
+      </geometry>
+      <material name="perfil_motores_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.207375 -0.01" rpy="0 -0 -3.14159"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_motores.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part capa_cima -->
+    <visual>
+      <origin xyz="6.93889e-18 -4.16334e-17 0.142" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/capa_cima.stl"/>
+      </geometry>
+      <material name="capa_cima_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 -4.16334e-17 0.142" rpy="0 -0 6.12323e-17"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/capa_cima.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part perfil_coluna -->
+    <visual>
+      <origin xyz="1.92083e-17 0.200375 0.107" rpy="0 -0 2.10573e-16"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_coluna.stl"/>
+      </geometry>
+      <material name="perfil_coluna_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.92083e-17 0.200375 0.107" rpy="0 -0 2.10573e-16"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_coluna.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part perfil_motores_2 -->
+    <visual>
+      <origin xyz="-0.179592 -0.103688 -0.01" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_motores.stl"/>
+      </geometry>
+      <material name="perfil_motores_2_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.179592 -0.103688 -0.01" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_motores.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part mdf_3 -->
+    <visual>
+      <origin xyz="1.54074e-33 -1.38778e-17 0.208" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf.stl"/>
+      </geometry>
+      <material name="mdf_3_material">
+        <color rgba="0.901961 0.835294 0.67451 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.54074e-33 -1.38778e-17 0.208" rpy="0 -0 -1.5708"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/mdf.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_2 -->
+    <visual>
+      <origin xyz="0.134299 -0.0775375 -0.04535" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/motor.stl"/>
+      </geometry>
+      <material name="motor_2_material">
+        <color rgba="0.756863 0.67451 0.580392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.134299 -0.0775375 -0.04535" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part motor_3 -->
+    <visual>
+      <origin xyz="-0.134299 -0.0775375 -0.04535" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/motor.stl"/>
+      </geometry>
+      <material name="motor_3_material">
+        <color rgba="0.756863 0.67451 0.580392 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.134299 -0.0775375 -0.04535" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/motor.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part perfil_coluna_2 -->
+    <visual>
+      <origin xyz="0.17353 -0.100188 0.4" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_coluna__2.stl"/>
+      </geometry>
+      <material name="perfil_coluna_2_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.17353 -0.100188 0.4" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_coluna__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part perfil_coluna_3 -->
+    <visual>
+      <origin xyz="-0.17353 -0.100188 0.4" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_coluna__2.stl"/>
+      </geometry>
+      <material name="perfil_coluna_3_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.17353 -0.100188 0.4" rpy="0 -0 -1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_coluna__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part perfil_motores_3 -->
+    <visual>
+      <origin xyz="0.179592 -0.103688 -0.01" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_motores.stl"/>
+      </geometry>
+      <material name="perfil_motores_3_material">
+        <color rgba="0.901961 0.901961 0.901961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.179592 -0.103688 -0.01" rpy="0 -0 1.0472"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/perfil_motores.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link roda -->
+  <link name="roda">
+    <inertial>
+      <origin xyz="2.45559e-17 -4.63561e-18 -0.0362488" rpy="0 0 0"/>
+      <mass value="0.174179"/>
+      <inertia ixx="0.000112667" ixy="0" ixz="1.65959e-20" iyy="0.000112667" iyz="0" izz="0.000186298"/>
+    </inertial>
+    <!-- Part roda -->
+    <visual>
+      <origin xyz="2.1469e-17 0 -0.038" rpy="1.5708 -5.55112e-17 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/roda.stl"/>
+      </geometry>
+      <material name="roda_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.1469e-17 0 -0.038" rpy="1.5708 -5.55112e-17 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/roda.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link rolete -->
+  <link name="rolete">
+    <inertial>
+      <origin xyz="1.46499e-50 8.82616e-19 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="1.15116e-22" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete -->
+    <visual>
+      <origin xyz="0 8.67362e-19 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 8.67362e-19 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete -->
+  <joint name="w1_external_1_passive" type="fixed">
+    <origin xyz="0.0175 -0.05 -0.047" rpy="-3.14159 -1.5708 0"/>
+    <parent link="roda"/>
+    <child link="rolete"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_2 -->
+  <link name="rolete_2">
+    <inertial>
+      <origin xyz="1.38778e-17 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-1.27301e-22" ixz="-2.33288e-23" iyy="1.03687e-06" iyz="-1.63191e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_2 -->
+    <visual>
+      <origin xyz="1.38778e-17 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.38778e-17 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_2 -->
+  <joint name="w1_external_2_passive" type="fixed">
+    <origin xyz="0.0520513 -0.00984456 -0.047" rpy="1.5708 5.55112e-17 2.61799"/>
+    <parent link="roda"/>
+    <child link="rolete_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_3 -->
+  <link name="rolete_3">
+    <inertial>
+      <origin xyz="-5.55112e-17 -5.54959e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-8.46859e-23" ixz="-8.08867e-23" iyy="1.03687e-06" iyz="-3.46581e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_3 -->
+    <visual>
+      <origin xyz="-5.55112e-17 -5.55112e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_3_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 -5.55112e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_3 -->
+  <joint name="w1_external_3_passive" type="fixed">
+    <origin xyz="0.0520513 0.00984456 -0.047" rpy="-1.5708 5.55112e-17 -2.61799"/>
+    <parent link="roda"/>
+    <child link="rolete_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_4 -->
+  <link name="rolete_4">
+    <inertial>
+      <origin xyz="1.46499e-50 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="1.15116e-22" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_4 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_4_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_4 -->
+  <joint name="w1_external_4_passive" type="fixed">
+    <origin xyz="0.0175 0.05 -0.047" rpy="-3.14159 -1.5708 0"/>
+    <parent link="roda"/>
+    <child link="rolete_4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_5 -->
+  <link name="rolete_5">
+    <inertial>
+      <origin xyz="1.38778e-17 -5.54959e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-4.09638e-23" ixz="-4.61173e-40" iyy="1.03687e-06" iyz="-2.8816e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_5 -->
+    <visual>
+      <origin xyz="1.38778e-17 -5.55112e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_5_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.38778e-17 -5.55112e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_5 -->
+  <joint name="w1_external_5_passive" type="fixed">
+    <origin xyz="-0.0345513 0.0401554 -0.047" rpy="1.5708 1.11022e-16 2.61799"/>
+    <parent link="roda"/>
+    <child link="rolete_5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_6 -->
+  <link name="rolete_6">
+    <inertial>
+      <origin xyz="-1.38778e-17 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="2.85021e-23" ixz="-4.66576e-23" iyy="1.03687e-06" iyz="7.23183e-24" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_6 -->
+    <visual>
+      <origin xyz="-1.38778e-17 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_6_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.38778e-17 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_6 -->
+  <joint name="w1_external_6_passive" type="fixed">
+    <origin xyz="-0.0345513 -0.0401554 -0.047" rpy="-1.5708 5.55112e-17 -2.61799"/>
+    <parent link="roda"/>
+    <child link="rolete_6"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_7 -->
+  <link name="rolete_7">
+    <inertial>
+      <origin xyz="-1.06152e-32 -1.03931e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.87444e-37" ixz="7.67209e-23" iyy="1.03687e-06" iyz="4.66576e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_7 -->
+    <visual>
+      <origin xyz="0 -1.04083e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_7_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.04083e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_7 -->
+  <joint name="w1_internal_1_passive" type="fixed">
+    <origin xyz="0.00984456 -0.0520513 -0.029" rpy="0.523599 -1.5708 0"/>
+    <parent link="roda"/>
+    <child link="rolete_7"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_8 -->
+  <link name="rolete_8">
+    <inertial>
+      <origin xyz="6.93889e-18 -2.77403e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-1.15116e-22" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_8 -->
+    <visual>
+      <origin xyz="6.93889e-18 -2.77556e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_8_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 -2.77556e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_8 -->
+  <joint name="w1_internal_2_passive" type="fixed">
+    <origin xyz="0.05 -0.0175 -0.029" rpy="-1.5708 -0 3.14159"/>
+    <parent link="roda"/>
+    <child link="rolete_8"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_9 -->
+  <link name="rolete_9">
+    <inertial>
+      <origin xyz="-2.77556e-17 1.3893e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-2.8779e-23" ixz="1.1095e-22" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_9 -->
+    <visual>
+      <origin xyz="-2.77556e-17 1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_9_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.77556e-17 1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_9 -->
+  <joint name="w1_internal_3_passive" type="fixed">
+    <origin xyz="0.00984456 0.0520513 -0.029" rpy="-0.523599 -1.5708 0"/>
+    <parent link="roda"/>
+    <child link="rolete_9"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_10 -->
+  <link name="rolete_10">
+    <inertial>
+      <origin xyz="4.32443e-34 -2.77403e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.53429e-23" ixz="5.44785e-23" iyy="1.03687e-06" iyz="-8.08867e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_10 -->
+    <visual>
+      <origin xyz="0 -2.77556e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_10_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -2.77556e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_10 -->
+  <joint name="w1_internal_4_passive" type="fixed">
+    <origin xyz="-0.00984456 0.0520513 -0.029" rpy="-2.61799 -1.5708 0"/>
+    <parent link="roda"/>
+    <child link="rolete_10"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_11 -->
+  <link name="rolete_11">
+    <inertial>
+      <origin xyz="2.08167e-17 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-1.15116e-22" ixz="-2.83782e-54" iyy="1.03687e-06" iyz="4.35376e-38" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_11 -->
+    <visual>
+      <origin xyz="2.08167e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_11_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.08167e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_11 -->
+  <joint name="w1_internal_5_passive" type="fixed">
+    <origin xyz="-0.05 -0.0175 -0.029" rpy="-1.5708 5.55112e-17 -3.14159"/>
+    <parent link="roda"/>
+    <child link="rolete_11"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_12 -->
+  <link name="rolete_12">
+    <inertial>
+      <origin xyz="2.77556e-17 -1.74998e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="2.8779e-23" ixz="-1.1095e-22" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_12 -->
+    <visual>
+      <origin xyz="2.77556e-17 -1.73472e-18 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_12_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 -1.73472e-18 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda to rolete_12 -->
+  <joint name="w1_internal_6_passive" type="fixed">
+    <origin xyz="-0.00984456 -0.0520513 -0.029" rpy="2.61799 -1.5708 0"/>
+    <parent link="roda"/>
+    <child link="rolete_12"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base to roda -->
+  <joint name="wheel1_speed" type="continuous">
+    <origin xyz="-0.183056 -0.105688 -0.04535" rpy="-1.5708 -0 -1.0472"/>
+    <parent link="base"/>
+    <child link="roda"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link roda_2 -->
+  <link name="roda_2">
+    <inertial>
+      <origin xyz="2.64514e-17 -4.63561e-18 -0.0362488" rpy="0 0 0"/>
+      <mass value="0.174179"/>
+      <inertia ixx="0.000112667" ixy="0" ixz="6.25429e-21" iyy="0.000112667" iyz="0" izz="0.000186298"/>
+    </inertial>
+    <!-- Part roda_2 -->
+    <visual>
+      <origin xyz="2.34618e-17 0 -0.038" rpy="1.5708 -5.55112e-17 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/roda.stl"/>
+      </geometry>
+      <material name="roda_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.34618e-17 0 -0.038" rpy="1.5708 -5.55112e-17 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/roda.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link rolete_13 -->
+  <link name="rolete_13">
+    <inertial>
+      <origin xyz="1.46499e-50 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="-5.75579e-23" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_13 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_13_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_13 -->
+  <joint name="w2_external_1_passive" type="fixed">
+    <origin xyz="0.0175 -0.05 -0.047" rpy="-3.14159 -1.5708 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_13"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_14 -->
+  <link name="rolete_14">
+    <inertial>
+      <origin xyz="2.77556e-17 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.15116e-22" ixz="-3.19511e-39" iyy="1.03687e-06" iyz="-6.92223e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_14 -->
+    <visual>
+      <origin xyz="2.77556e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_14_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_14 -->
+  <joint name="w2_external_2_passive" type="fixed">
+    <origin xyz="0.0520513 -0.00984456 -0.047" rpy="-1.5708 5.55112e-17 -0.523599"/>
+    <parent link="roda_2"/>
+    <child link="rolete_14"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_15 -->
+  <link name="rolete_15">
+    <inertial>
+      <origin xyz="1.38778e-17 -5.55264e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="4.67658e-23" ixz="-2.33288e-23" iyy="1.03687e-06" iyz="-5.51349e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_15 -->
+    <visual>
+      <origin xyz="1.38778e-17 -5.55112e-17 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_15_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.38778e-17 -5.55112e-17 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_15 -->
+  <joint name="w2_external_3_passive" type="fixed">
+    <origin xyz="0.0345513 0.0401554 -0.047" rpy="-1.5708 -2.22045e-16 0.523599"/>
+    <parent link="roda_2"/>
+    <child link="rolete_15"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_16 -->
+  <link name="rolete_16">
+    <inertial>
+      <origin xyz="1.46499e-50 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="-5.75579e-23" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_16 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_16_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_16 -->
+  <joint name="w2_external_4_passive" type="fixed">
+    <origin xyz="0.0175 0.05 -0.047" rpy="-3.14159 -1.5708 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_16"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_17 -->
+  <link name="rolete_17">
+    <inertial>
+      <origin xyz="4.16334e-17 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="5.75579e-23" ixz="-1.27544e-22" iyy="1.03687e-06" iyz="-1.16644e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_17 -->
+    <visual>
+      <origin xyz="4.16334e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_17_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="4.16334e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_17 -->
+  <joint name="w2_external_5_passive" type="fixed">
+    <origin xyz="-0.0345513 0.0401554 -0.047" rpy="-1.5708 -0 -0.523599"/>
+    <parent link="roda_2"/>
+    <child link="rolete_17"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_18 -->
+  <link name="rolete_18">
+    <inertial>
+      <origin xyz="-1.04083e-17 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="6.23083e-24" ixz="-2.33288e-23" iyy="1.03687e-06" iyz="9.127e-24" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_18 -->
+    <visual>
+      <origin xyz="-1.04083e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_18_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.04083e-17 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_18 -->
+  <joint name="w2_external_6_passive" type="fixed">
+    <origin xyz="-0.0520513 -0.00984456 -0.047" rpy="-1.5708 -2.77556e-16 0.523599"/>
+    <parent link="roda_2"/>
+    <child link="rolete_18"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_19 -->
+  <link name="rolete_19">
+    <inertial>
+      <origin xyz="-3.2278e-33 -1.71947e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.29501e-39" ixz="2.33288e-23" iyy="1.03687e-06" iyz="2.33288e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_19 -->
+    <visual>
+      <origin xyz="0 -1.73472e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_19_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.73472e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_19 -->
+  <joint name="w2_internal_1_passive" type="fixed">
+    <origin xyz="0.00984456 -0.0520513 -0.029" rpy="0.523599 -1.5708 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_19"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_20 -->
+  <link name="rolete_20">
+    <inertial>
+      <origin xyz="1.46499e-50 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-5.75579e-23" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_20 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_20_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_20 -->
+  <joint name="w2_internal_2_passive" type="fixed">
+    <origin xyz="0.05 0.0175 -0.029" rpy="-1.5708 -5.55112e-17 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_20"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_21 -->
+  <link name="rolete_21">
+    <inertial>
+      <origin xyz="2.77556e-17 -1.38625e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="3.85565e-24" ixz="2.24082e-23" iyy="1.03687e-06" iyz="2.33288e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_21 -->
+    <visual>
+      <origin xyz="2.77556e-17 -1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_21_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 -1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_21 -->
+  <joint name="w2_internal_3_passive" type="fixed">
+    <origin xyz="0.00984456 0.0520513 -0.029" rpy="-0.523599 -1.5708 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_21"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_22 -->
+  <link name="rolete_22">
+    <inertial>
+      <origin xyz="2.77556e-17 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-3.85565e-24" ixz="2.24082e-23" iyy="1.03687e-06" iyz="-2.33288e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_22 -->
+    <visual>
+      <origin xyz="2.77556e-17 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_22_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="2.77556e-17 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_22 -->
+  <joint name="w2_internal_4_passive" type="fixed">
+    <origin xyz="-0.0401554 0.0345513 -0.029" rpy="0.523599 -1.5708 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_22"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_23 -->
+  <link name="rolete_23">
+    <inertial>
+      <origin xyz="6.93889e-18 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-5.75579e-23" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_23 -->
+    <visual>
+      <origin xyz="6.93889e-18 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_23_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="6.93889e-18 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_23 -->
+  <joint name="w2_internal_5_passive" type="fixed">
+    <origin xyz="-0.05 0.0175 -0.029" rpy="-1.5708 -5.55112e-17 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_23"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_24 -->
+  <link name="rolete_24">
+    <inertial>
+      <origin xyz="-5.55112e-17 -6.92364e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.87617e-23" ixz="3.77487e-23" iyy="1.03687e-06" iyz="-5.75579e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_24 -->
+    <visual>
+      <origin xyz="-5.55112e-17 -6.93889e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_24_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 -6.93889e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_2 to rolete_24 -->
+  <joint name="w2_internal_6_passive" type="fixed">
+    <origin xyz="-0.0401554 -0.0345513 -0.029" rpy="-0.523599 -1.5708 0"/>
+    <parent link="roda_2"/>
+    <child link="rolete_24"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base to roda_2 -->
+  <joint name="wheel2_speed" type="continuous">
+    <origin xyz="0.183056 -0.105688 -0.04535" rpy="-1.5708 -0 1.0472"/>
+    <parent link="base"/>
+    <child link="roda_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link roda_3 -->
+  <link name="roda_3">
+    <inertial>
+      <origin xyz="1.42653e-17 -4.63561e-18 -0.0362488" rpy="0 0 0"/>
+      <mass value="0.174179"/>
+      <inertia ixx="0.000112667" ixy="0" ixz="0" iyy="0.000112667" iyz="0" izz="0.000186298"/>
+    </inertial>
+    <!-- Part roda_3 -->
+    <visual>
+      <origin xyz="1.12757e-17 0 -0.038" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/roda.stl"/>
+      </geometry>
+      <material name="roda_3_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.12757e-17 0 -0.038" rpy="1.5708 -0 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/roda.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link rolete_25 -->
+  <link name="rolete_25">
+    <inertial>
+      <origin xyz="1.46499e-50 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_25 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_25_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_25 -->
+  <joint name="w3_external_1_passive" type="fixed">
+    <origin xyz="0.0175 0.05 -0.047" rpy="-0 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_25"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_26 -->
+  <link name="rolete_26">
+    <inertial>
+      <origin xyz="1.46499e-50 -3.45419e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="0" iyy="1.03687e-06" iyz="2.33288e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_26 -->
+    <visual>
+      <origin xyz="0 -3.46945e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_26_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -3.46945e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_26 -->
+  <joint name="w3_external_2_passive" type="fixed">
+    <origin xyz="-0.0520513 0.00984456 -0.047" rpy="2.0944 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_26"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_27 -->
+  <link name="rolete_27">
+    <inertial>
+      <origin xyz="1.35178e-48 1.3893e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-1.91706e-38" ixz="-2.24465e-38" iyy="1.03687e-06" iyz="3.42291e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_27 -->
+    <visual>
+      <origin xyz="0 1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_27_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_27 -->
+  <joint name="w3_external_3_passive" type="fixed">
+    <origin xyz="-0.0345513 -0.0401554 -0.047" rpy="1.0472 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_27"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_28 -->
+  <link name="rolete_28">
+    <inertial>
+      <origin xyz="1.46499e-50 1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_28 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_28_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_28 -->
+  <joint name="w3_external_4_passive" type="fixed">
+    <origin xyz="0.0175 -0.05 -0.047" rpy="-0 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_28"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_29 -->
+  <link name="rolete_29">
+    <inertial>
+      <origin xyz="-8.14659e-50 -1.38625e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-2.55609e-38" ixz="-1.37987e-38" iyy="1.03687e-06" iyz="-5.75579e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_29 -->
+    <visual>
+      <origin xyz="0 -1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_29_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.38778e-17 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_29 -->
+  <joint name="w3_external_5_passive" type="fixed">
+    <origin xyz="0.0345513 -0.0401554 -0.047" rpy="2.0944 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_29"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_30 -->
+  <link name="rolete_30">
+    <inertial>
+      <origin xyz="1.46499e-50 -6.92364e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_30 -->
+    <visual>
+      <origin xyz="0 -6.93889e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_30_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -6.93889e-18 -0.0175" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_30 -->
+  <joint name="w3_external_6_passive" type="fixed">
+    <origin xyz="0.0520513 0.00984456 -0.047" rpy="1.0472 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_30"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_31 -->
+  <link name="rolete_31">
+    <inertial>
+      <origin xyz="-1.41897e-48 1.71947e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.27804e-38" ixz="-1.03601e-38" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_31 -->
+    <visual>
+      <origin xyz="0 1.73472e-18 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_31_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 1.73472e-18 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_31 -->
+  <joint name="w3_internal_1_passive" type="fixed">
+    <origin xyz="-0.0401554 0.0345513 -0.029" rpy="2.61799 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_31"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_32 -->
+  <link name="rolete_32">
+    <inertial>
+      <origin xyz="1.46499e-50 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_32 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_32_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_32 -->
+  <joint name="w3_internal_2_passive" type="fixed">
+    <origin xyz="-0.05 -0.0175 -0.029" rpy="1.5708 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_32"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_33 -->
+  <link name="rolete_33">
+    <inertial>
+      <origin xyz="-1.41897e-48 1.38625e-17 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.52775e-38" ixz="-9.98491e-40" iyy="1.03687e-06" iyz="2.25456e-71" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_33 -->
+    <visual>
+      <origin xyz="0 1.38778e-17 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_33_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 1.38778e-17 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_33 -->
+  <joint name="w3_internal_3_passive" type="fixed">
+    <origin xyz="-0.0401554 -0.0345513 -0.029" rpy="-2.61799 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_33"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_34 -->
+  <link name="rolete_34">
+    <inertial>
+      <origin xyz="1.48379e-50 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="1.71225e-39" ixz="-6.39021e-39" iyy="1.03687e-06" iyz="-5.75579e-23" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_34 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_34_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_34 -->
+  <joint name="w3_internal_4_passive" type="fixed">
+    <origin xyz="0.00984456 -0.0520513 -0.029" rpy="2.61799 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_34"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_35 -->
+  <link name="rolete_35">
+    <inertial>
+      <origin xyz="1.46499e-50 -1.52538e-20 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="0" ixz="0" iyy="1.03687e-06" iyz="0" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_35 -->
+    <visual>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_35_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_35 -->
+  <joint name="w3_internal_5_passive" type="fixed">
+    <origin xyz="0.05 -0.0175 -0.029" rpy="1.5708 -0 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_35"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Link rolete_36 -->
+  <link name="rolete_36">
+    <inertial>
+      <origin xyz="1.48379e-50 -1.74998e-18 -0.0175" rpy="0 0 0"/>
+      <mass value="0.00952544"/>
+      <inertia ixx="1.03687e-06" ixy="-2.21363e-38" ixz="-1.27804e-38" iyy="1.03687e-06" iyz="1.15321e-70" izz="4.20254e-07"/>
+    </inertial>
+    <!-- Part rolete_36 -->
+    <visual>
+      <origin xyz="0 -1.73472e-18 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+      <material name="rolete_36_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.73472e-18 -0.0175" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="file://$(find omnicare_description)/urdf//assets/rolete.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from roda_3 to rolete_36 -->
+  <joint name="w3_internal_6_passive" type="fixed">
+    <origin xyz="0.00984456 0.0520513 -0.029" rpy="-2.61799 1.5708 0"/>
+    <parent link="roda_3"/>
+    <child link="rolete_36"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base to roda_3 -->
+  <joint name="wheel3_speed" type="continuous">
+    <origin xyz="-1.18552e-17 0.211375 -0.04535" rpy="1.5708 -0 2.10573e-16"/>
+    <parent link="base"/>
+    <child link="roda_3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>

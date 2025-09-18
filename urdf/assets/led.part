@@ -1,0 +1,14 @@
+{
+    "configuration": "default",
+    "documentId": "0f277f7e0d3fae969dbd5f3e",
+    "documentMicroversion": "952e0ffe06a1bdb804a19b3e",
+    "documentVersion": "9c6711048bf6e27ae53363bd",
+    "elementId": "a29b3bbe0e99b2cec0175273",
+    "fullConfiguration": "default",
+    "id": "MNmQZeSg4sekaMTdy",
+    "isStandardContent": false,
+    "name": "LED <1>",
+    "partId": "JID",
+    "suppressed": false,
+    "type": "Part"
+}
