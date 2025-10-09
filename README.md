@@ -286,6 +286,29 @@ URDF do Omnicare:
   - Ao se locomover é importante que o Omnicare seja capaz de controlar sua velocidade, de forma suave e gradual, em momentos de curvas ou que passar perto de pessoas.
   - Pré-requisitos: controle dos motores, sensores para identificar a presença de pessoas.
   - Resposta emocional do usúario: Conforto e calma.
+ 
+ 
+ ## Interações culturais
+
+Para analizar o comportamento que o Omnicare deve apresentar quando estiver em um local com uma cultura diferente do nosso país, foi pensado em possíveis interações nos 3 seguintes países: Alemanha, Japão e Suécia
+
+### Alemanha
+- Precisão no posicinamento de coleta/entrega:
+  - É muito importante para os alemães que a ordem, a presibilidade e a eficiência sejam preservadas. Caso opere em hospitais na Alemanha, o Omnicare deverá sempre se posicionar no mesmo ponto designado com marca no chão.
+  - Pré-requisitos: mapeamento, marcações visuais/físicas, precisão na navegação.
+  - Resposta emocional do usúario: eficiência e disciplina.
+ 
+- Tom objetivo:
+  - Os alemães são um povo que tendem a se comunicar de maneira clara e concisa com base em dados. Caso opere em hospitais na Alemanha, o Omnicare deverá comunicar todo o status da entrega de forma direta como: “Entrega dos remédios foi concluída. O tempo total foi de 3 minutos. A entrega foi recebida pelo enfeimeiro responsável”.
+  - Pré-requisitos: módulo de voz e personalização de frases.
+  - Resposta emocional do usúario: eficiência e profissionalismo.
+
+- Exibição de dados:
+  - Como já mencionado, a clareza e transparência nos dados é muito importante para os alemães. Caso opere em hospitais na Alemanha, é importante que o corpo do Omnicare receba uma atualização para contar com um display que mostre o tempo estimado de entrega e status exato.
+  - Pré-requisitos: painel LCD integrado ao corpo do Omnicare e sincronização de dados.
+  - Resposta emocional do usúario: organização e confiança.
+ 
+ 
 
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
 
