@@ -277,10 +277,15 @@ URDF do Omnicare:
 
 ### Não-verbal
 
-- Para cada interação:
-  - Descreva a interação.
-  - Determine os pré-requisitos para que a interação aconteça
-  - Determine espera de resposta emocional do usúario quando a interação é finalizada
+- Sinalização com LEDs:
+  - O Omnicare utilizará LEDs para identificar seu status ao se locomover, como: luz verde para tudo ok, luz amarela para alertar que está em movimento e luz vermelha para sinalizar erros.
+  - Pré-requisitos: hardware que se cominuque com os LEDs, integração de status.
+  - Resposta emocional do usúario: clareza e tranquilidade.
+ 
+  - Movimentação suave:
+  - Ao se locomover é importante que o Omnicare seja capaz de controlar sua velocidade, de forma suave e gradual, em momentos de curvas ou que passar perto de pessoas.
+  - Pré-requisitos: controle dos motores, sensores para identificar a presença de pessoas.
+  - Resposta emocional do usúario: Conforto e calma.
 
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
 
