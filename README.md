@@ -250,25 +250,30 @@ URDF do Omnicare:
 - Uso de elevadores:
   - Com seu manipulador, Omnicare irá chamar o elevador e se posicionar dentro próximo ao painel, onde irá selecionar o andar de entrega.
   - Pré-requisitos: manipulador funcional, visão computacional para identificação dos andares e sensores para detectar obstáculos.
-  - Resposta emocional do usúario: alívio e tranquilidade;
+  - Resposta emocional do usúario: alívio e tranquilidade.
  
 - Entrega de itens:
   - Omnicare irá se posicinar, de maneira alinhada, no ponto de coleta dos itens. Feito isso se deslocará até o local de entrega de forma autonoma.
   - Pré-requisitos: reconhecimento do ponto de entrega (checkpoint na navegação), sensores para indentificar possiveis obstaculos, área de armazenamento.
-  - Resposta emocional do usúario: segurança com itens e praticidade do serviço;
+  - Resposta emocional do usúario: segurança com itens e praticidade do serviço.
 
 - Distância entre pessoas ao se locomover:
   - Omnicare deve manter uma distância segura de, pelo menos, meio metro dos funcionários e pacientes do hospital enquanto se desloca.
   - Pré-requisitos: sensores para indentificar obstáculos e pessoas, rotas mapeadas, programa que ajusta a velocidade dos motores.
-  - Resposta emocional do usúario: segurança e confiança;
+  - Resposta emocional do usúario: segurança e confiança.
 
 
 ### Verbal
 
-- Para cada interação:
-  - Descreva a interação.
-  - Determine os pré-requisitos para que a interação aconteça
-  - Determine espera de resposta emocional do usúario quando a interação é finalizada
+- Confirmação de entrega:
+  - Ao chegar no local de entrega dos itens, o Omnicare irá emitir uma mensagem de voz avisando que os itens estão prontos para retirada.
+  - Pré-requisitos: sistema de voz, alto falantes.
+  - Resposta emocional do usúario: clareza e confiança.
+
+- Aviso de falha:
+  - Em caso de algum erro ocorrer durante a entrega de algum item, o Omnicare irá emitir um alerta avisando que uma falha no sistema ou um impecilio na rota foi identificado.
+  - Pré-requisitos: sistema de voz, alto falantes, sensores para indentificar obstáculos.
+  - Resposta emocional do usúario: transparência em relação a identificação do erro e preocupação com o que pode ter ocorrido.
 
 ### Não-verbal
 
