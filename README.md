@@ -228,18 +228,12 @@ O Moxi tem uma grande vantagem em relação ao Omnicare no quesito de aceitaçã
 
 
 ## Design
-
-- Pense nas características de Affordances do seu robô. Que tipo de acessibilidades devem ser consideradas dentro do seu projeto?
-- Discuta o papel das expectativas do usuário no projeto de um robô. Qual a importância e pontos a serem considerados se você quiser vender esse robô  seu robô?
-- O seu robô tem um padrão com mais ou menos características antropomórficas? Qual padrão é mais aceito pela sociedade dentro do projeto que você está desenvolvendo?
-- Quais o design mais apropriado para o robô deste projeto? Modele o seu robô com desenhos de formas primitivas (caixas, cilindros, esferas)
-
 <!-- ![Partes do robô](partes_do_robo.png) -->
 <!-- ![Robô](robo.png) -->
 URDF do Omnicare:
+
 <img width="440" height="701" alt="image" src="https://github.com/user-attachments/assets/207e3279-b311-450c-affa-77d40f177ee5" />
 
-URDF do Manipulador do Omnicare:
 
 
 ## Ações do robô
@@ -253,10 +247,21 @@ URDF do Manipulador do Omnicare:
 
 ### Espacial
 
-- Para cada interação:
-  - Descreva a interação.
-  - Determine os pré-requisitos para que a interação aconteça
-  - Determine espera de resposta emocional do usúario quando a interação é finalizada
+- Uso de elevadores:
+  - Com seu manipulador, Omnicare irá chamar o elevador e se posicionar dentro próximo ao painel, onde irá selecionar o andar de entrega.
+  - Pré-requisitos: manipulador funcional, visão computacional para identificação dos andares e sensores para detectar obstáculos.
+  - Resposta emocional do usúario: alívio e tranquilidade;
+ 
+- Entrega de itens:
+  - Omnicare irá se posicinar, de maneira alinhada, no ponto de coleta dos itens. Feito isso se deslocará até o local de entrega de forma autonoma.
+  - Pré-requisitos: reconhecimento do ponto de entrega (checkpoint na navegação), sensores para indentificar possiveis obstaculos, área de armazenamento.
+  - Resposta emocional do usúario: segurança com itens e praticidade do serviço;
+
+- Distância entre pessoas ao se locomover:
+  - Omnicare deve manter uma distância segura de, pelo menos, meio metro dos funcionários e pacientes do hospital enquanto se desloca.
+  - Pré-requisitos: sensores para indentificar obstáculos e pessoas, rotas mapeadas, programa que ajusta a velocidade dos motores.
+  - Resposta emocional do usúario: segurança e confiança;
+
 
 ### Verbal
 
