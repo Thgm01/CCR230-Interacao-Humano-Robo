@@ -74,10 +74,16 @@ Relacionamentos
   - Principal responsável por coordenar a equipe de enfermagem e garantir o bom fluxo de materiais e equipamentos dentro do hospital;
   - Atua como decisora de rotina operacional, mas não necessariamente na compra de tecnologias (pode influenciar gestores).
 
-
-1° Mapa de empatia
+Mapa de empatia
 
 <img width="1052" height="728" alt="image" src="https://github.com/user-attachments/assets/f6f80076-ac20-46f0-958c-7f4effb212d5" />
+
+Jornada do usuário
+
+<img width="1920" height="1080" alt="dra mariana" src="https://github.com/user-attachments/assets/9aa292b3-ed77-4f7b-96b5-2d575773747b" />
+
+
+
 
 
 
@@ -121,9 +127,14 @@ Relacionamentos
   - Pacientes (indiretamente): busca melhorar a experiência por meio de processos mais ágeis e eficientes.
 
 
-2° Mapa de empatia
+Mapa de empatia
 
 <img width="1048" height="730" alt="image" src="https://github.com/user-attachments/assets/61f24f18-db7c-4be7-ba84-f010701a20fb" />
+
+Jornada do usuário
+
+<img width="1920" height="1080" alt="carlos mendes" src="https://github.com/user-attachments/assets/4733558f-98c5-4483-aed9-b482527b3fe0" />
+
 
 
 **3ª Persona: Enzo Ferreira – Estagiário de Enfermagem**
@@ -166,7 +177,13 @@ Relacionamentos
   - Colegas estagiários: troca de experiências e aprendizado conjunto.
 
 Mapa de empatia
+
 <img width="1048" height="731" alt="image" src="https://github.com/user-attachments/assets/16b535d2-b4a9-41a6-8732-b83af0c0cd7f" />
+
+Jornada do usuário
+
+<img width="1920" height="1080" alt="enzo ferreira" src="https://github.com/user-attachments/assets/de898096-3f75-4e37-8b92-2aec33176c43" />
+
 
 
 ## Contexto de uso
@@ -176,16 +193,6 @@ No aspecto social, o robô se insere em um ambiente onde há pacientes em situa�
 
 Para atuar de forma eficaz, o OmniCare deve conhecer previamente informações sobre o hospital em que está inserido. É essencial que tenha acesso ao mapeamento do espaço, incluindo plantas dos andares, localização de corredores, salas e elevadores, além de distinguir áreas públicas das restritas. Também deve compreender a infraestrutura de mobilidade, como dimensões de portas e regras de circulação, e estar atento às condições dinâmicas do ambiente, como a movimentação constante de pessoas, macas e cadeiras de rodas. Além disso, precisa ter informações operacionais, como horários de entrega de medicamentos, prioridades de cada tarefa e protocolos de segurança no transporte de itens sensíveis. Por fim, é fundamental que reconheça quem são os usuários autorizados a interagir com ele, quais idiomas deve utilizar e quais são os diferentes níveis de acesso, garantindo que sua atuação seja eficiente, segura e adequada ao contexto hospitalar.
 
-## Jornada do usuário
-
-
-
-- Criar uma narrativa para o o seu robô e o usuário.
-- Determine o passo a passo que o usuário realiza desde o primeiro até o último encontro com robô na realização da tarefa.
-- O que está acontecendo com o ambiente quando o robô está interagindo com o usuário?
-  - Descreva o que acontece ou pode acontecer passo a passo
-  - Como a tarefa começa? Como a tarefa evolui? Como a tarefa termina?
-- Enfatize todos os momentos em que acontece uma interação verbal, não-verbal e espacial.
 
 ## Análise de concorrência
 
@@ -236,13 +243,6 @@ URDF do Omnicare:
 
 
 
-## Ações do robô
-
-- Para cada ação:
-  - Descreva a ação.
-  - Determine os pré-requisitos para que a ação aconteça
-  - Determine o que se espera que seja modificado no ambiente quando a ação é finalizada
-
 ## Interações do robô
 
 ### Espacial
@@ -292,7 +292,7 @@ URDF do Omnicare:
 
 Para analizar o comportamento que o Omnicare deve apresentar quando estiver em um local com uma cultura diferente do nosso país, foi pensado em possíveis interações nos 3 seguintes países: Alemanha, Japão e Suécia
 
-### Alemanha
+### Alemanha 
 - Precisão no posicinamento de coleta/entrega:
   - É muito importante para os alemães que a ordem, a presibilidade e a eficiência sejam preservadas. Caso opere em hospitais na Alemanha, o Omnicare deverá sempre se posicionar no mesmo ponto designado com marca no chão.
   - Pré-requisitos: mapeamento, marcações visuais/físicas, precisão na navegação.
@@ -308,34 +308,41 @@ Para analizar o comportamento que o Omnicare deve apresentar quando estiver em u
   - Pré-requisitos: painel LCD integrado ao corpo do Omnicare e sincronização de dados.
   - Resposta emocional do usúario: organização e confiança.
  
+### Japão
+- Posicinamento ao parar:
+  - Os japoneses prezam muito pela harmonia coletiva, para eles é um ato de educação parar de uma forma que não bloqueie o fluxo de passagem. O Omnicare deve ficar enconstado à parede para mostrar discrição e respeito ao espaço compartilhado.
+  - Pré-requisitos: mapeamento, sensores precisos, boa leitura do espaço.
+  - Resposta emocional do usúario: respeito e harmonia.
+ 
+- Tom mais polido:
+  - A cultura japonesa valoriza a cortesia e o respeito hierárquico. É importante que o Omnicare possa dizer ao menos um simples “Muito obrigado pelo seu trabalho” para reforça boas práticas sociais e criar empatia, mesmo sendo um robô.
+  - Pré-requisitos: módulo de voz e personalização de frases.
+  - Resposta emocional do usúario: respeito e cortesia.
+
+- Exibição de dados:
+  - A cultura do respeito é muito forte no Japão, o gesto de inclinar-se é culturalmente reconhecido como sinal de respeito. Omnicare pode realizar um pequeno movimento simbolico de inclinação pela tela que servirá como sua tela, assim ele se conecta à etiqueta local, tornando-o mais aceito socialmente.
+  - Pré-requisitos: tela funcional para ser seu rosto e efeito visual.
+  - Resposta emocional do usúario: respeito e empatia.
+ 
+### Suécia
+- Respeito do espaço interpessoal:
+  - Os suecos são um povo que valorizam muito o respeito a sua privacidade e distanciamento físico em áreas públicas. Ao operar na Suécia, OmniCare deve manter uma zona de segurança maior para evitar a sensação de invasão e gerar desconforto.
+  - Pré-requisitos: sensores melhorados para atender a zona de segurança maior e configuração reginal.
+  - Resposta emocional do usúario: conforto e privacidade.
+ 
+- Comunicação reduzida:
+  - A comunicação do povo sueco é contida e funcional. Ao Omniciare emitir mensagens simples e diretas como somente “Entrega concluída” evitam sobrecarga informativa e transmitem naturalidade e sobriedade, alinhadas ao estilo local.
+  - Pré-requisitos: filtro de mensagens, módulo de voz e modo silencioso.
+  - Resposta emocional do usúario: naturalidade e discrição.
+
+- Neutralidade visual:
+  - O design escandinavo é conhecido pela simplicidade, clareza e ausência de excessos. Para transmitir tranquilidade em um hospital da Suécia, o OmniCare deve usar cores discretas, evitar animações chamativas e adaptar a intensidade de seus LEDs ao trocar de ambiente.
+  - Pré-requisitos: sitema de iluminação regulavél, estrutura adaptada, algoritimo de comportamento.
+  - Resposta emocional do usúario: conforto e tranquilidade.
+ 
  
 
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
 
 
-# Aula 4
-## Tarefa 1
-
-- Qual é a situação de uso para a IHR do seu robô?
-  Transporte de itens e assitente de informação 
-  - Contexto:
-    O contexto principal analisado foi em um ambiente hospitalar.
-  
-  - Usuário(s):
-    Os principais usuários são os funcionarios do hospital (Setor logistico, medicos, enfermeiros e etc.), os pacientes e também prestadores de serviços no hospital. Levando em conta principlamente as pessoas com qualquer tipo de dificuldade fisica, mental ou psicologica.
-  
-  - Objetivos:
-    Auxiliar no transporte de cargas dentro do hospital de forma segura para os pacientes, prestadores de serviços e funcionários e também fornecer informações sobre o hospital.
-  
-  - Interação:
-    Comunicação entre os funcionários para definir o que deve ser feito, interação social com todas as pessoas que frequentam o ambiente hospitalar e comunicação com os pacientes e prestadores de serviço do hospital para fornecer informações.
-
-  - Interface e Sistema:
-    Fiquei com duvida nesse topico
-
-- Como inserir o seu robô em um contexto cotidiano para aprimorar a solução de um problema?
-  É possível inserir o nosso robô dentro dos hospitais para servir de transportadores de cargas, realizando interações verbais e não verbais com todas as pessoas desse ambiente, podendo fornecer informações e repcionar os pacientes
-
-- Onde seus usuários interagem com seu Robô?
-  Robô utilizado para transporte de materiais que precisam de um maior cuidado (material infeccioso, alimentos, documentos ou remédios). Nesse caso o robô terá um uso mais interno do hospital onde suas principais interações serão com funcionários e prestadores de serviços com uma movimentação menor de pacientes. Esse uso fica com maior enfase em interagir com os responsaveis pela carga a ser transportada e com os destinatários dessas cargas (Farmácia, centros de exames, centros de coleta, lixeira e etc.). Também tem a interação com os pacientes onde o robo pode se comunicar com eles e fornecer informações e solicitar algumas tarefas como chamar o medico, guiar pelo hospital e etc.
-
+## Molic
