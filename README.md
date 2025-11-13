@@ -241,6 +241,11 @@ URDF da OmniCare:
 
 <img width="440" height="701" alt="image" src="https://github.com/user-attachments/assets/207e3279-b311-450c-affa-77d40f177ee5" />
 
+Modelo inserido no Rviz:
+
+<img width="573" height="491" alt="image" src="https://github.com/user-attachments/assets/36e9619f-3b09-4d35-abf4-a6fec6887778" />
+
+
 
 
 ## Ações do robô
