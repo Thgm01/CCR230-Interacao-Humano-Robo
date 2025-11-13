@@ -10,14 +10,14 @@ Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário 
 
 ## Resumo
 
-O protótipo OmniCare é um robô móvel omnidirecional, autônomo e modular, projetado para transportar materiais entre andares em hospitais utilizando elevadores. A proposta visa contornarlimitações de soluções que dependem da integracão como sistema interno dos elevadores. O robô conta com uma estrutura compacta e adaptável, equipada com manipulador cartesiano para acionar fisicamente os botôes, buzzer para emitir alertas, luzes LED para emissão de sinais e feedbacks visuais e uma tela que age como rosto e painel de comando.
+O protótipa OmniCare é um robô móvel omnidirecional, autônomo e modular, projetado para transportar materiais entre andares em hospitais utilizando elevadores. A proposta visa contornarlimitações de soluções que dependem da integracão como sistema interno dos elevadores. O robô conta com uma estrutura compacta e adaptável, equipada com manipulador cartesiano para acionar fisicamente os botôes, buzzer para emitir alertas, luzes LED para emissão de sinais e feedbacks visuais e uma tela que age como rosto e painel de comando.
 
 ## Introdução
 
 Nos últimos anos, a robótica tem desempenhado um papel fundamental no desenvolvimento de soluções tecnológicas voltadas para a saúde, com o objetivo de melhorar a eficiência hospitalar e reduzir riscos para os profissionais. Aplicações como a cirurgia assistida por robôs, a reabilitação e terapia robóticas e o uso de robôs em ambientes hospitalares, como no transporte de equipamentos, têm sido amplamente adotadas. Essas tecnologias têm permitido intervenções mais precisas, maior agilidade no atendimento e uma significativa redução no tempo de recuperação dos pacientes. 
 E no cenário pós-pandêmico, a automação hospitalar tem ganhado destaque como uma ferramenta de apoio à rotina clínica e operacional. Contudo, um desafio técnico recorrente é a limitação dos robôs móveis em realizarem tarefas logísticas entre diferentes andares, já que a maioria das soluções atuais depende da integração com o sistema interno dos elevadores, algo muitas vezes inviável.
 
-Omnicare é um robô móvel omnidirecional, autônomo e modular, com capacidade de interagir fisicamente com elevadores comuns por meio de um manipulador que aciona os botões necessários para a navegação entre andares.
+OmniCare é um robô móvel omnidirecional, autônomo e modular, com capacidade de interagir fisicamente com elevadores comuns por meio de um manipulador que aciona os botões necessários para a navegação entre andares.
 
 Navegar em diferentes andares de um hospital para auxilar a equipe do local.
 
@@ -187,11 +187,11 @@ Jornada do usuário
 
 
 ## Contexto de uso
-O OmniCare foi projetado para interagir em ambientes hospitalares, como hospitais, clínicas e centros de saúde, onde há grande fluxo de pessoas e rotinas sensíveis ao tempo. Nesse espaço, o robô precisa lidar com corredores movimentados, elevadores, diferentes andares e áreas de acesso restrito, sempre respeitando as regras de higiene, segurança e silêncio que caracterizam o ambiente hospitalar. A sua presença deve ser discreta e eficiente, auxiliando a equipe de saúde em tarefas logísticas como entrega de medicamentos e materiais, sem atrapalhar o trabalho humano.
+a OmniCare foi projetado para interagir em ambientes hospitalares, como hospitais, clínicas e centros de saúde, onde há grande fluxo de pessoas e rotinas sensíveis ao tempo. Nesse espaço, o robô precisa lidar com corredores movimentados, elevadores, diferentes andares e áreas de acesso restrito, sempre respeitando as regras de higiene, segurança e silêncio que caracterizam o ambiente hospitalar. A sua presença deve ser discreta e eficiente, auxiliando a equipe de saúde em tarefas logísticas como entrega de medicamentos e materiais, sem atrapalhar o trabalho humano.
 
-No aspecto social, o robô se insere em um ambiente onde há pacientes em situações de vulnerabilidade, profissionais que trabalham sob pressão e familiares que muitas vezes estão preocupados. Por isso, a interação deve transmitir confiabilidade, empatia e neutralidade, de modo que seja visto como um aliado e não como um intruso. Já no aspecto econômico, a implementação do OmniCare está ligada à busca dos hospitais por otimização de recursos, redução de custos e aumento da eficiência. A automação de tarefas repetitivas libera tempo dos profissionais de saúde para atividades que exigem atenção humana, contribuindo para um melhor uso da equipe disponível. Culturalmente, o ambiente hospitalar exige respeito à privacidade, dignidade e protocolos estabelecidos, além de adaptação às diferentes formas de comunicação, considerando a diversidade linguística e cultural dos pacientes e colaboradores.
+No aspecto social, o robô se insere em um ambiente onde há pacientes em situações de vulnerabilidade, profissionais que trabalham sob pressão e familiares que muitas vezes estão preocupados. Por isso, a interação deve transmitir confiabilidade, empatia e neutralidade, de modo que seja visto como um aliado e não como um intruso. Já no aspecto econômico, a implementação da OmniCare está ligada à busca dos hospitais por otimização de recursos, redução de custos e aumento da eficiência. A automação de tarefas repetitivas libera tempo dos profissionais de saúde para atividades que exigem atenção humana, contribuindo para um melhor uso da equipe disponível. Culturalmente, o ambiente hospitalar exige respeito à privacidade, dignidade e protocolos estabelecidos, além de adaptação às diferentes formas de comunicação, considerando a diversidade linguística e cultural dos pacientes e colaboradores.
 
-Para atuar de forma eficaz, o OmniCare deve conhecer previamente informações sobre o hospital em que está inserido. É essencial que tenha acesso ao mapeamento do espaço, incluindo plantas dos andares, localização de corredores, salas e elevadores, além de distinguir áreas públicas das restritas. Também deve compreender a infraestrutura de mobilidade, como dimensões de portas e regras de circulação, e estar atento às condições dinâmicas do ambiente, como a movimentação constante de pessoas, macas e cadeiras de rodas. Além disso, precisa ter informações operacionais, como horários de entrega de medicamentos, prioridades de cada tarefa e protocolos de segurança no transporte de itens sensíveis. Por fim, é fundamental que reconheça quem são os usuários autorizados a interagir com ele, quais idiomas deve utilizar e quais são os diferentes níveis de acesso, garantindo que sua atuação seja eficiente, segura e adequada ao contexto hospitalar.
+Para atuar de forma eficaz, a OmniCare deve conhecer previamente informações sobre o hospital em que está inserido. É essencial que tenha acesso ao mapeamento do espaço, incluindo plantas dos andares, localização de corredores, salas e elevadores, além de distinguir áreas públicas das restritas. Também deve compreender a infraestrutura de mobilidade, como dimensões de portas e regras de circulação, e estar atento às condições dinâmicas do ambiente, como a movimentação constante de pessoas, macas e cadeiras de rodas. Além disso, precisa ter informações operacionais, como horários de entrega de medicamentos, prioridades de cada tarefa e protocolos de segurança no transporte de itens sensíveis. Por fim, é fundamental que reconheça quem são os usuários autorizados a interagir com ele, quais idiomas deve utilizar e quais são os diferentes níveis de acesso, garantindo que sua atuação seja eficiente, segura e adequada ao contexto hospitalar.
 
 
 ## Análise de concorrência
@@ -206,7 +206,7 @@ TUG / T3 é uma linha consolidada de AMRs hospitalares que auxiliam em transport
 - Forças: implantado em muitos hospitais, modelos voltados para cargas grandes, suporte comercial, técnico e de experiência de integração com TI hospitalar.
 - Fraquezas: depende de integração com a infraestrutura do hospital, e tambám há relatos públicos sobre a vulnerabilidades de segurança dos sistemas de robôs AMRs
 
-Quando comparado ao Omnicare, é notavél a sua superioridade no quesito de maior suporte para carregamento de cargas, porém ele perde ao precisar ser integrado ao sistema do hospital para se locomover entre andares.
+Quando comparado aa OmniCare, é notavél a sua superioridade no quesito de maior suporte para carregamento de cargas, porém ele perde ao precisar ser integrado ao sistema do hospital para se locomover entre andares.
 
 **Athena 2.0 - Slamtec**
 
@@ -218,7 +218,7 @@ A Athena 2.0 é plataforma robótica móvel de uso geral, comunmente usada em lo
 - Forças: boa capacidade de carga para porte médio, navegação SLAM avançada com LiDAR, detecção de obstáculos, mapeamento de múltiplos andares, autonomia de até 19 horas, e disponibilidade comercial.
 - Fraquezas: depende de integração eletrônica com elevadores, risco de falhas de compatibilidade ou de comunicação entre sistemas.
 
-Omnicare apresente uma superioridade à Athena 2.0 por não precisar de um sistema integrado para utilizar elevadores, porém ele perde quando olhamos para a autonomia de 19 horas da Athena 2.0.
+OmniCare apresente uma superioridade à Athena 2.0 por não precisar de um sistema integrado para utilizar elevadores, porém ele perde quando olhamos para a autonomia de 19 horas da Athena 2.0.
 
 
 **Moxi - Diligent Robotics**
@@ -231,13 +231,13 @@ Moxi é robô assistente social desenvolvido para hospitais com foco em aliviar 
 - Forças: design humanizado e social, experiência comprovada em ambientes hospitalares, foco em tarefas que liberam tempo da equipe de enfermagem.
 - Fraquezas: capacidade de carga limitada,ddependência de integração com elevadores, menor versatilidade em relação a tarefas industriais ou de transporte pesado.
 
-O Moxi tem uma grande vantagem em relação ao Omnicare no quesito de aceitação social e o foco na experiência de usuários humanos, enquanto o OmniCare aposta em versatilidade técnica. Isso dá ao OmniCare vantagem em hospitais com infraestrutura mais antiga e a vantagem de suportar mais carga.
+O Moxi tem uma grande vantagem em relação aa OmniCare no quesito de aceitação social e o foco na experiência de usuários humanos, enquanto a OmniCare aposta em versatilidade técnica. Isso dá aa OmniCare vantagem em hospitais com infraestrutura mais antiga e a vantagem de suportar mais carga.
 
 
 ## Design
 <!-- ![Partes do robô](partes_do_robo.png) -->
 <!-- ![Robô](robo.png) -->
-URDF do Omnicare:
+URDF da OmniCare:
 
 <img width="440" height="701" alt="image" src="https://github.com/user-attachments/assets/207e3279-b311-450c-affa-77d40f177ee5" />
 
@@ -271,17 +271,17 @@ URDF do Omnicare:
 ### Espacial
 
 - Uso de elevadores:
-  - Com seu manipulador, Omnicare irá chamar o elevador e se posicionar dentro próximo ao painel, onde irá selecionar o andar de entrega.
+  - Com seu manipulador, OmniCare irá chamar o elevador e se posicionar dentro próximo ao painel, onde irá selecionar o andar de entrega.
   - Pré-requisitos: manipulador funcional, visão computacional para identificação dos andares e sensores para detectar obstáculos.
   - Resposta emocional do usuário: alívio e tranquilidade.
  
 - Entrega de itens:
-  - Omnicare irá se posicinar, de maneira alinhada, no ponto de coleta dos itens. Feito isso se deslocará até o local de entrega de forma autonoma.
+  - OmniCare irá se posicinar, de maneira alinhada, no ponto de coleta dos itens. Feito isso se deslocará até o local de entrega de forma autonoma.
   - Pré-requisitos: reconhecimento do ponto de entrega (checkpoint na navegação), sensores para indentificar possiveis obstaculos, área de armazenamento.
   - Resposta emocional do usuário: segurança com itens e praticidade do serviço.
 
 - Distância entre pessoas ao se locomover:
-  - Omnicare deve manter uma distância segura de, pelo menos, meio metro dos funcionários e pacientes do hospital enquanto se desloca.
+  - OmniCare deve manter uma distância segura de, pelo menos, meio metro dos funcionários e pacientes do hospital enquanto se desloca.
   - Pré-requisitos: sensores para indentificar obstáculos e pessoas, rotas mapeadas, programa que ajusta a velocidade dos motores.
   - Resposta emocional do usuário: segurança e confiança.
 
@@ -289,12 +289,12 @@ URDF do Omnicare:
 ### Verbal
 
 - Confirmação de entrega:
-  - Ao chegar no local de entrega dos itens, o Omnicare irá emitir uma mensagem de voz avisando que os itens estão prontos para retirada.
+  - Ao chegar no local de entrega dos itens, a OmniCare irá emitir uma mensagem de voz avisando que os itens estão prontos para retirada.
   - Pré-requisitos: sistema de voz, alto falantes.
   - Resposta emocional do usuário: clareza e confiança.
 
 - Aviso de falha:
-  - Em caso de algum erro ocorrer durante a entrega de algum item, o Omnicare irá emitir um alerta avisando que uma falha no sistema ou um impecilio na rota foi identificado.
+  - Em caso de algum erro ocorrer durante a entrega de algum item, a OmniCare irá emitir um alerta avisando que uma falha no sistema ou um impecilio na rota foi identificado.
   - Pré-requisitos: sistema de voz, alto falantes ou buzzers, sensores para indentificar obstáculos.
   - Resposta emocional do usuário: transparência em relação a identificação do erro e preocupação com o que pode ter ocorrido.
  
@@ -307,12 +307,12 @@ URDF do Omnicare:
 ### Não-verbal
 
 - Sinalização com LEDs:
-  - O Omnicare utilizará LEDs para identificar seu status ao se locomover, como: luz verde para tudo ok, luz amarela para alertar que está em movimento e luz vermelha para sinalizar erros.
+  - a OmniCare utilizará LEDs para identificar seu status ao se locomover, como: luz verde para tudo ok, luz amarela para alertar que está em movimento e luz vermelha para sinalizar erros.
   - Pré-requisitos: hardware que se cominuque com os LEDs, integração de status.
   - Resposta emocional do usuário: clareza e tranquilidade.
  
 - Movimentação suave:
-  - Ao se locomover é importante que o Omnicare seja capaz de controlar sua velocidade, de forma suave e gradual, em momentos de curvas ou que passar perto de pessoas.
+  - Ao se locomover é importante que a OmniCare seja capaz de controlar sua velocidade, de forma suave e gradual, em momentos de curvas ou que passar perto de pessoas.
   - Pré-requisitos: controle dos motores, sensores para identificar a presença de pessoas.
   - Resposta emocional do usuário: Conforto e calma.
  
@@ -325,37 +325,37 @@ URDF do Omnicare:
  
  ## Interações culturais
 
-Para analizar o comportamento que o Omnicare deve apresentar quando estiver em um local com uma cultura diferente do nosso país, foi pensado em possíveis interações nos 3 seguintes países: Alemanha, Japão e Suécia
+Para analizar o comportamento que a OmniCare deve apresentar quando estiver em um local com uma cultura diferente do nosso país, foi pensado em possíveis interações nos 3 seguintes países: Alemanha, Japão e Suécia
 
 ### Alemanha 
 - Precisão no posicinamento de coleta/entrega:
-  - É muito importante para os alemães que a ordem, a presibilidade e a eficiência sejam preservadas. Caso opere em hospitais na Alemanha, o Omnicare deverá sempre se posicionar no mesmo ponto designado com marca no chão.
+  - É muito importante para os alemães que a ordem, a presibilidade e a eficiência sejam preservadas. Caso opere em hospitais na Alemanha, a OmniCare deverá sempre se posicionar no mesmo ponto designado com marca no chão.
   - Pré-requisitos: mapeamento, marcações visuais/físicas, precisão na navegação.
   - Resposta emocional do usuário: eficiência e disciplina.
  
 - Tom objetivo:
-  - Os alemães são um povo que tendem a se comunicar de maneira clara e concisa com base em dados. Caso opere em hospitais na Alemanha, o Omnicare deverá comunicar todo o status da entrega de forma direta como: “Entrega dos remédios foi concluída. O tempo total foi de 3 minutos. A entrega foi recebida pelo enfeimeiro responsável”.
+  - Os alemães são um povo que tendem a se comunicar de maneira clara e concisa com base em dados. Caso opere em hospitais na Alemanha, a OmniCare deverá comunicar todo o status da entrega de forma direta como: “Entrega dos remédios foi concluída. O tempo total foi de 3 minutos. A entrega foi recebida pelo enfeimeiro responsável”.
   - Pré-requisitos: módulo de voz e personalização de frases.
   - Resposta emocional do usuário: eficiência e profissionalismo.
 
 - Exibição de dados:
-  - Como já mencionado, a clareza e transparência nos dados é muito importante para os alemães. Caso opere em hospitais na Alemanha, é importante que o corpo do Omnicare receba uma atualização para contar com um display que mostre o tempo estimado de entrega e status exato.
-  - Pré-requisitos: painel LCD integrado ao corpo do Omnicare e sincronização de dados.
+  - Como já mencionado, a clareza e transparência nos dados é muito importante para os alemães. Caso opere em hospitais na Alemanha, é importante que o painel da OmniCare receba uma atualização para exibir dados como: o tempo estimado de entrega e status exato.
+  - Pré-requisitos: painel LCD integrado ao corpo da OmniCare e sincronização de dados.
   - Resposta emocional do usuário: organização e confiança.
  
 ### Japão
 - Posicinamento ao parar:
-  - Os japoneses prezam muito pela harmonia coletiva, para eles é um ato de educação parar de uma forma que não bloqueie o fluxo de passagem. O Omnicare deve ficar enconstado à parede para mostrar discrição e respeito ao espaço compartilhado.
+  - Os japoneses prezam muito pela harmonia coletiva, para eles é um ato de educação parar de uma forma que não bloqueie o fluxo de passagem. a OmniCare deve ficar enconstado à parede para mostrar discrição e respeito ao espaço compartilhado.
   - Pré-requisitos: mapeamento, sensores precisos, boa leitura do espaço.
   - Resposta emocional do usuário: respeito e harmonia.
  
 - Tom mais polido:
-  - A cultura japonesa valoriza a cortesia e o respeito hierárquico. É importante que o Omnicare possa dizer ao menos um simples “Muito obrigado pelo seu trabalho” para reforça boas práticas sociais e criar empatia, mesmo sendo um robô.
+  - A cultura japonesa valoriza a cortesia e o respeito hierárquico. É importante que a OmniCare possa dizer ao menos um simples “Muito obrigado pelo seu trabalho” para reforça boas práticas sociais e criar empatia, mesmo sendo um robô.
   - Pré-requisitos: módulo de voz e personalização de frases.
   - Resposta emocional do usuário: respeito e cortesia.
 
-- Exibição de dados:
-  - A cultura do respeito é muito forte no Japão, o gesto de inclinar-se é culturalmente reconhecido como sinal de respeito. Omnicare pode realizar um pequeno movimento simbolico de inclinação pela tela que servirá como sua tela, assim ele se conecta à etiqueta local, tornando-o mais aceito socialmente.
+- Sinais de reconhecimento:
+  - A cultura do respeito é muito forte no Japão, o gesto de inclinar-se é culturalmente reconhecido como sinal de respeito. OmniCare pode realizar um pequeno movimento simbolico de inclinação pela tela que servirá como sua tela, assim ele se conecta à etiqueta local, tornando-o mais aceito socialmente.
   - Pré-requisitos: tela funcional para ser seu rosto e efeito visual.
   - Resposta emocional do usuário: respeito e empatia.
  
@@ -371,7 +371,7 @@ Para analizar o comportamento que o Omnicare deve apresentar quando estiver em u
   - Resposta emocional do usuário: naturalidade e discrição.
 
 - Neutralidade visual:
-  - O design escandinavo é conhecido pela simplicidade, clareza e ausência de excessos. Para transmitir tranquilidade em um hospital da Suécia, o OmniCare deve usar cores discretas, evitar animações chamativas e adaptar a intensidade de seus LEDs ao trocar de ambiente.
+  - O design escandinavo é conhecido pela simplicidade, clareza e ausência de excessos. Para transmitir tranquilidade em um hospital da Suécia, a OmniCare deve usar cores discretas, evitar animações chamativas e adaptar a intensidade de seus LEDs ao trocar de ambiente.
   - Pré-requisitos: sitema de iluminação regulavél, estrutura adaptada, algoritimo de comportamento.
   - Resposta emocional do usuário: conforto e tranquilidade.
  
