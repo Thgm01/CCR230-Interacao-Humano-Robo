@@ -10,7 +10,7 @@ Trabalho de Interação Humano-Robô (IHR) apresentado ao Centro Universitário 
 
 ## Resumo
 
-O protótipo OmniCare é um robô móvel omnidirecional, autônomo e modular, projetado para transportar materiais entre andares em hospitais utilizando elevadores. A proposta visa contornarlimitações de soluções que dependem da integracão como sistema interno dos elevadores. O robô conta com uma estrutura compacta e adaptável, equipada com manipulador cartesiano para acionar fisicamente os botôes.
+O protótipo OmniCare é um robô móvel omnidirecional, autônomo e modular, projetado para transportar materiais entre andares em hospitais utilizando elevadores. A proposta visa contornarlimitações de soluções que dependem da integracão como sistema interno dos elevadores. O robô conta com uma estrutura compacta e adaptável, equipada com manipulador cartesiano para acionar fisicamente os botôes, buzzer para emitir alertas, luzes LED para emissão de sinais e feedbacks visuais e uma tela que age como rosto e painel de comando.
 
 ## Introdução
 
@@ -208,7 +208,7 @@ TUG / T3 é uma linha consolidada de AMRs hospitalares que auxiliam em transport
 
 Quando comparado ao Omnicare, é notavél a sua superioridade no quesito de maior suporte para carregamento de cargas, porém ele perde ao precisar ser integrado ao sistema do hospital para se locomover entre andares.
 
-**Athena 2.0 — Slamtec**
+**Athena 2.0 - Slamtec**
 
 <img width="640" height="765" alt="image" src="https://github.com/user-attachments/assets/dfa74134-b66f-43d1-a010-b27b47aa3973" />
 
@@ -221,7 +221,7 @@ A Athena 2.0 é plataforma robótica móvel de uso geral, comunmente usada em lo
 Omnicare apresente uma superioridade à Athena 2.0 por não precisar de um sistema integrado para utilizar elevadores, porém ele perde quando olhamos para a autonomia de 19 horas da Athena 2.0.
 
 
-**Moxi — Diligent Robotics**
+**Moxi - Diligent Robotics**
 
 <img width="768" height="854" alt="image" src="https://github.com/user-attachments/assets/f6b97897-e661-49e6-8d68-093685c068fe" />
 
@@ -345,4 +345,13 @@ Para analizar o comportamento que o Omnicare deve apresentar quando estiver em u
 [^1]: Fonte: Adaptado de <https://hazeshift.com.br/mapa-de-empatia/>
 
 
-## Molic
+## Molic Apresentação da OmniCare
+
+<img width="1148" height="729" alt="image" src="https://github.com/user-attachments/assets/247be3ac-320e-4403-997c-e3ee4492a837" />
+
+
+## Molic Navegação da OmniCare
+
+<img width="920" height="729" alt="image" src="https://github.com/user-attachments/assets/f8842f1f-fc73-48b9-8bcd-4fba41cbdc2d" />
+
+
