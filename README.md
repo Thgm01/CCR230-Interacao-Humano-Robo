@@ -243,6 +243,29 @@ URDF do Omnicare:
 
 
 
+## Ações do robô
+
+### Navegação:
+  - OmniCare irá se deslocar de forma autônoma, ajustando velocidade e trajeto conforme o fluxo de pessoas e obstáculos, com movimentos suaves e silenciosos.
+  - Pré-requisitos: sensores LiDAR, sistema SLAM para mapeamento, controle de velocidade adaptativo.
+  - Resposta emocional do usuário: segurança, pois perceberá que o robô se move com fluidez e controle.
+
+### Locomoção entre andares:
+  - OmniCare emitira luzes e sons sutis indicam estados do robô e algumas de suas ações.
+  - Pré-requisitos: EDs RGB programáveis, controle de volume adaptativo, padrões visuais definidos para cada estado, buzzers.
+  - Resposta emocional do usuário: admiração e confiança.
+
+### Comunicação não verbal:
+  - OmniCare será capaz de se locomover entre andares por meio dos elevadores, que solicitará de forma autônoma com seu manipulador.
+  - Pré-requisitos: manipulador funcional, visão computacional para identificação dos andares e sensores para detectar obstáculos, checkpoints marcados no seu mapa entre os andares.
+  - Resposta emocional do usuário: clareza e previsibilidade, por entender melhor as ações da OmniCare.
+
+### Comunicação direta com o usuário:
+  - Por um display frontal OmniCare exibe expressões simples e informações do sistema, e também age como painel de controle por toque facilitando comandos rápidos.
+  - Pré-requisitos: tela touchscreen sensível, interface intuitiva (UI/UX hospitalar), biblioteca de expressões visuais..
+  - Resposta emocional do usuário: empatia e facilidade.
+
+
 ## Interações do robô
 
 ### Espacial
@@ -250,17 +273,17 @@ URDF do Omnicare:
 - Uso de elevadores:
   - Com seu manipulador, Omnicare irá chamar o elevador e se posicionar dentro próximo ao painel, onde irá selecionar o andar de entrega.
   - Pré-requisitos: manipulador funcional, visão computacional para identificação dos andares e sensores para detectar obstáculos.
-  - Resposta emocional do usúario: alívio e tranquilidade.
+  - Resposta emocional do usuário: alívio e tranquilidade.
  
 - Entrega de itens:
   - Omnicare irá se posicinar, de maneira alinhada, no ponto de coleta dos itens. Feito isso se deslocará até o local de entrega de forma autonoma.
   - Pré-requisitos: reconhecimento do ponto de entrega (checkpoint na navegação), sensores para indentificar possiveis obstaculos, área de armazenamento.
-  - Resposta emocional do usúario: segurança com itens e praticidade do serviço.
+  - Resposta emocional do usuário: segurança com itens e praticidade do serviço.
 
 - Distância entre pessoas ao se locomover:
   - Omnicare deve manter uma distância segura de, pelo menos, meio metro dos funcionários e pacientes do hospital enquanto se desloca.
   - Pré-requisitos: sensores para indentificar obstáculos e pessoas, rotas mapeadas, programa que ajusta a velocidade dos motores.
-  - Resposta emocional do usúario: segurança e confiança.
+  - Resposta emocional do usuário: segurança e confiança.
 
 
 ### Verbal
@@ -268,24 +291,36 @@ URDF do Omnicare:
 - Confirmação de entrega:
   - Ao chegar no local de entrega dos itens, o Omnicare irá emitir uma mensagem de voz avisando que os itens estão prontos para retirada.
   - Pré-requisitos: sistema de voz, alto falantes.
-  - Resposta emocional do usúario: clareza e confiança.
+  - Resposta emocional do usuário: clareza e confiança.
 
 - Aviso de falha:
   - Em caso de algum erro ocorrer durante a entrega de algum item, o Omnicare irá emitir um alerta avisando que uma falha no sistema ou um impecilio na rota foi identificado.
-  - Pré-requisitos: sistema de voz, alto falantes, sensores para indentificar obstáculos.
-  - Resposta emocional do usúario: transparência em relação a identificação do erro e preocupação com o que pode ter ocorrido.
+  - Pré-requisitos: sistema de voz, alto falantes ou buzzers, sensores para indentificar obstáculos.
+  - Resposta emocional do usuário: transparência em relação a identificação do erro e preocupação com o que pode ter ocorrido.
+ 
+- Apresentação:
+  - Ao detectar várias pessoas ao seu redor, a OmniCare irá iniciar seu protocolo de apresentação por meio de sua tela e caixa de som.
+  - Pré-requisitos: display de tamanho médio, alto falantes, software de apresentação.
+  - Resposta emocional do usuário: transparência e simpatia.
+
 
 ### Não-verbal
 
 - Sinalização com LEDs:
   - O Omnicare utilizará LEDs para identificar seu status ao se locomover, como: luz verde para tudo ok, luz amarela para alertar que está em movimento e luz vermelha para sinalizar erros.
   - Pré-requisitos: hardware que se cominuque com os LEDs, integração de status.
-  - Resposta emocional do usúario: clareza e tranquilidade.
+  - Resposta emocional do usuário: clareza e tranquilidade.
  
-  - Movimentação suave:
+- Movimentação suave:
   - Ao se locomover é importante que o Omnicare seja capaz de controlar sua velocidade, de forma suave e gradual, em momentos de curvas ou que passar perto de pessoas.
   - Pré-requisitos: controle dos motores, sensores para identificar a presença de pessoas.
-  - Resposta emocional do usúario: Conforto e calma.
+  - Resposta emocional do usuário: Conforto e calma.
+ 
+- Apresentação:
+  - Durante a sua apresentação, a OmniCare irá realizar diversas ações demonstrativas de suas funcionalidades.
+  - Pré-requisitos: integração entre seus sistemas.
+  - Resposta emocional do usuário: clareza e simpatia.
+
  
  
  ## Interações culturais
@@ -296,49 +331,49 @@ Para analizar o comportamento que o Omnicare deve apresentar quando estiver em u
 - Precisão no posicinamento de coleta/entrega:
   - É muito importante para os alemães que a ordem, a presibilidade e a eficiência sejam preservadas. Caso opere em hospitais na Alemanha, o Omnicare deverá sempre se posicionar no mesmo ponto designado com marca no chão.
   - Pré-requisitos: mapeamento, marcações visuais/físicas, precisão na navegação.
-  - Resposta emocional do usúario: eficiência e disciplina.
+  - Resposta emocional do usuário: eficiência e disciplina.
  
 - Tom objetivo:
   - Os alemães são um povo que tendem a se comunicar de maneira clara e concisa com base em dados. Caso opere em hospitais na Alemanha, o Omnicare deverá comunicar todo o status da entrega de forma direta como: “Entrega dos remédios foi concluída. O tempo total foi de 3 minutos. A entrega foi recebida pelo enfeimeiro responsável”.
   - Pré-requisitos: módulo de voz e personalização de frases.
-  - Resposta emocional do usúario: eficiência e profissionalismo.
+  - Resposta emocional do usuário: eficiência e profissionalismo.
 
 - Exibição de dados:
   - Como já mencionado, a clareza e transparência nos dados é muito importante para os alemães. Caso opere em hospitais na Alemanha, é importante que o corpo do Omnicare receba uma atualização para contar com um display que mostre o tempo estimado de entrega e status exato.
   - Pré-requisitos: painel LCD integrado ao corpo do Omnicare e sincronização de dados.
-  - Resposta emocional do usúario: organização e confiança.
+  - Resposta emocional do usuário: organização e confiança.
  
 ### Japão
 - Posicinamento ao parar:
   - Os japoneses prezam muito pela harmonia coletiva, para eles é um ato de educação parar de uma forma que não bloqueie o fluxo de passagem. O Omnicare deve ficar enconstado à parede para mostrar discrição e respeito ao espaço compartilhado.
   - Pré-requisitos: mapeamento, sensores precisos, boa leitura do espaço.
-  - Resposta emocional do usúario: respeito e harmonia.
+  - Resposta emocional do usuário: respeito e harmonia.
  
 - Tom mais polido:
   - A cultura japonesa valoriza a cortesia e o respeito hierárquico. É importante que o Omnicare possa dizer ao menos um simples “Muito obrigado pelo seu trabalho” para reforça boas práticas sociais e criar empatia, mesmo sendo um robô.
   - Pré-requisitos: módulo de voz e personalização de frases.
-  - Resposta emocional do usúario: respeito e cortesia.
+  - Resposta emocional do usuário: respeito e cortesia.
 
 - Exibição de dados:
   - A cultura do respeito é muito forte no Japão, o gesto de inclinar-se é culturalmente reconhecido como sinal de respeito. Omnicare pode realizar um pequeno movimento simbolico de inclinação pela tela que servirá como sua tela, assim ele se conecta à etiqueta local, tornando-o mais aceito socialmente.
   - Pré-requisitos: tela funcional para ser seu rosto e efeito visual.
-  - Resposta emocional do usúario: respeito e empatia.
+  - Resposta emocional do usuário: respeito e empatia.
  
 ### Suécia
 - Respeito do espaço interpessoal:
   - Os suecos são um povo que valorizam muito o respeito a sua privacidade e distanciamento físico em áreas públicas. Ao operar na Suécia, OmniCare deve manter uma zona de segurança maior para evitar a sensação de invasão e gerar desconforto.
   - Pré-requisitos: sensores melhorados para atender a zona de segurança maior e configuração reginal.
-  - Resposta emocional do usúario: conforto e privacidade.
+  - Resposta emocional do usuário: conforto e privacidade.
  
 - Comunicação reduzida:
   - A comunicação do povo sueco é contida e funcional. Ao Omniciare emitir mensagens simples e diretas como somente “Entrega concluída” evitam sobrecarga informativa e transmitem naturalidade e sobriedade, alinhadas ao estilo local.
   - Pré-requisitos: filtro de mensagens, módulo de voz e modo silencioso.
-  - Resposta emocional do usúario: naturalidade e discrição.
+  - Resposta emocional do usuário: naturalidade e discrição.
 
 - Neutralidade visual:
   - O design escandinavo é conhecido pela simplicidade, clareza e ausência de excessos. Para transmitir tranquilidade em um hospital da Suécia, o OmniCare deve usar cores discretas, evitar animações chamativas e adaptar a intensidade de seus LEDs ao trocar de ambiente.
   - Pré-requisitos: sitema de iluminação regulavél, estrutura adaptada, algoritimo de comportamento.
-  - Resposta emocional do usúario: conforto e tranquilidade.
+  - Resposta emocional do usuário: conforto e tranquilidade.
  
  
 
