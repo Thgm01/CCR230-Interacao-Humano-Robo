@@ -368,12 +368,12 @@ Para analizar o comportamento que a OmniCare deve apresentar quando estiver em u
 - Comunicação reduzida:
   - A comunicação do povo sueco é contida e funcional. Ao Omniciare emitir mensagens simples e diretas como somente “Entrega concluída” evitam sobrecarga informativa e transmitem naturalidade e sobriedade, alinhadas ao estilo local.
   - Pré-requisitos: filtro de mensagens, módulo de voz e modo silencioso.
-  - Resposta emocional do usuário: naturalidade e discrição.
+  - Resposta emocional do usuário: naturalidade e tranquilidade.
 
 - Neutralidade visual:
   - O design escandinavo é conhecido pela simplicidade, clareza e ausência de excessos. Para transmitir tranquilidade em um hospital da Suécia, a OmniCare deve usar cores discretas, evitar animações chamativas e adaptar a intensidade de seus LEDs ao trocar de ambiente.
   - Pré-requisitos: sitema de iluminação regulavél, estrutura adaptada, algoritimo de comportamento.
-  - Resposta emocional do usuário: conforto e tranquilidade.
+  - Resposta emocional do usuário: conforto e discrição.
  
  
 
