@@ -275,15 +275,15 @@ Modelo inserido no Rviz:
 
 ### Espacial
 
-- Uso de elevadores:
-  - Com seu manipulador, OmniCare irá chamar o elevador e se posicionar dentro próximo ao painel, onde irá selecionar o andar de entrega.
-  - Pré-requisitos: manipulador funcional, visão computacional para identificação dos andares e sensores para detectar obstáculos.
-  - Resposta emocional do usuário: alívio e tranquilidade.
- 
 - Entrega de itens:
   - OmniCare irá se posicinar, de maneira alinhada, no ponto de coleta dos itens. Feito isso se deslocará até o local de entrega de forma autonoma.
   - Pré-requisitos: reconhecimento do ponto de entrega (checkpoint na navegação), sensores para indentificar possiveis obstaculos, área de armazenamento.
   - Resposta emocional do usuário: segurança com itens e praticidade do serviço.
+
+- Giro para apresentar compartimento:
+  - Ao chegar ao destino de sua entrega, OmniCare não fica apenas parado na frente do funcionário. Ao indenficar quem irá retirar, a OmniCare irá girar em seu eixo para exibir o compartimento de carga e facilitar a retirada pelo funcionário.
+  - Pré-requisitos: visão computacional para identificação dos funcionários e controle de giro preciso.
+  - Resposta emocional do usuário: confiança e praticidade.
 
 - Distância entre pessoas ao se locomover:
   - OmniCare deve manter uma distância segura de, pelo menos, meio metro dos funcionários e pacientes do hospital enquanto se desloca.
@@ -316,16 +316,15 @@ Modelo inserido no Rviz:
   - Pré-requisitos: hardware que se cominuque com os LEDs, integração de status.
   - Resposta emocional do usuário: clareza e tranquilidade.
  
-- Movimentação suave:
-  - Ao se locomover é importante que a OmniCare seja capaz de controlar sua velocidade, de forma suave e gradual, em momentos de curvas ou que passar perto de pessoas.
-  - Pré-requisitos: controle dos motores, sensores para identificar a presença de pessoas.
-  - Resposta emocional do usuário: Conforto e calma.
- 
 - Apresentação:
   - Durante a sua apresentação, a OmniCare irá realizar diversas ações demonstrativas de suas funcionalidades.
   - Pré-requisitos: integração entre seus sistemas.
   - Resposta emocional do usuário: clareza e simpatia.
 
+- Animação "Idle":
+  - A tela da OmniCare estará sempre ativa exibindo seu rosto virtual. Para não causar desconforto com uma mera imagem parada, a tela exibira uma animação "idle"/de espera onde o rosto virtual da Omnicare irá fazer expressões sutis como olhar para os lados ou respirar.
+  - Pré-requisitos: diferentes animações de espera, sincronização com estados do robô.
+  - Resposta emocional do usuário: Conforto e simpatia. 
  
  
  ## Interações culturais
