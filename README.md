@@ -241,11 +241,18 @@ URDF da OmniCare:
 
 <img width="440" height="701" alt="image" src="https://github.com/user-attachments/assets/207e3279-b311-450c-affa-77d40f177ee5" />
 
-Modelo inserido no Rviz:
+Modelo da OmniCare inserido no Rviz:
 
 <img width="573" height="491" alt="image" src="https://github.com/user-attachments/assets/36e9619f-3b09-4d35-abf4-a6fec6887778" />
 
 
+URDF do manipulador da OmniCare:
+
+<img width="458" height="769" alt="image" src="https://github.com/user-attachments/assets/cb6aea33-fc86-4486-849f-53b6dbc1fc02" />
+
+Modelo do manipulador inserido no Rviz:
+
+<img width="707" height="760" alt="image" src="https://github.com/user-attachments/assets/e4d77c89-8c8a-47d7-a5de-827c80f015f8" />
 
 
 ## Ações do robô
